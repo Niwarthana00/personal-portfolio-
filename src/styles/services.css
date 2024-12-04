@@ -1,0 +1,211 @@
+/* Services and Skills Responsive Styling */
+.services-container, 
+.skills-container {
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Titles */
+.services-title, 
+.skills-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.services-description {
+    color: #666;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Services Cards Grid */
+.services-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease-in-out forwards;
+    padding: 1rem;
+}
+
+.service-card {
+    background-color: #FFE1EC;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: cardFadeInUp 0.8s ease-in-out forwards;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h3 {
+    color: #000;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.service-card p {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.icon {
+    font-size: 2.5rem;
+    color: #E70159;
+    margin-bottom: 0.5rem;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.skill-card {
+    width: 100px;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: skillCardFadeInUp 0.8s ease-in-out forwards;
+}
+
+
+
+.skill-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover img {
+    transform: rotate(360deg);
+}
+
+.skill-card p {
+    font-size: 0.9rem;
+    color: #333;
+    margin-top: 0.5rem;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes cardFadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes skillCardFadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .services-title, 
+    .skills-title {
+        font-size: 1.5rem;
+    }
+
+    .services-cards, 
+    .skills-grid {
+        gap: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    .service-card, 
+    .skill-card {
+        width: calc(50% - 2rem);
+        max-width: 250px;
+    }
+
+    .services-description {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .services-title, 
+    .skills-title {
+        font-size: 1.3rem;
+    }
+
+    .services-cards, 
+    .skills-grid {
+        gap: 1rem;
+    }
+
+    .service-card, 
+    .skill-card {
+        width: 100%;
+        max-width: none;
+    }
+
+    .icon {
+        font-size: 2rem;
+    }
+
+    .skill-card img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .skill-card p {
+        font-size: 0.8rem;
+    }
+}
