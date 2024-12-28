@@ -1,7 +1,22 @@
-import React from 'react';
+import React, { useState } from "react";
 import '../styles/contact.css';
+import CallApi from "./CallApi";
 
 export default function Contactus() {
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    CallApi(formData.name, formData.email, formData.message);
+  };
   return (
     
     <div className="contact-container" id="contact">
@@ -19,11 +34,11 @@ export default function Contactus() {
             </p>
           </div>
         </div>
-        <form>
-          <input type="text" placeholder="Your Name" name="name" required />
-          <input type="email" placeholder="Your Email" name="email" required />
-          <textarea placeholder="Your Message" name="message" required />
-          <button type="submit">Submit</button>
+        <form onSubmit={handleSubmit}>
+          <input type="text" placeholder="Your Name"  name="name" required value={formData.name} onChange={handleInputChange}/>
+          <input type="email" placeholder="Your Email" name="email" required value={formData.email} onChange={handleInputChange}/>
+          <textarea placeholder="Your Message" name="message" required value={formData.message} onChange={handleInputChange}/>
+          <button type="submit" onClick={() => callApi()}>Submit</button>
         </form>
       </div>
     </div>
