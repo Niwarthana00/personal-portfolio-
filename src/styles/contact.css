@@ -94,7 +94,40 @@ form {
 .contact-form button:hover {
     background-color: #555;
 }
-
+/* Add these styles to your existing contact.css file */
+.toast-message {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    animation: slideIn 0.3s ease-in-out;
+    z-index: 1000;
+  }
+  
+  .toast-success {
+    background-color: #10B981;
+  }
+  
+  .toast-error {
+    background-color: #EF4444;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 /* Responsive Adjustments */
 @media screen and (max-width: 768px) {
     .contact-form {
