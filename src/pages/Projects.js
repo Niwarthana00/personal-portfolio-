@@ -8,7 +8,7 @@ const projectData = [
     category: 'App Design', 
     title: 'School Service Bus Notification App', 
     image: 'https://i.imgur.com/0tiwi75.jpeg', 
-    link: 'https://github.com/Niwarthana00/school_service' 
+    link: 'https://github.com/Niwarthana00/school_service'
   },
   { 
     id: 2, 
@@ -17,14 +17,13 @@ const projectData = [
     image: 'https://i.imgur.com/KvLI1Jq.jpeg', 
     link: 'https://github.com/Niwarthana00/Dog-Nutrition-Mobile-Application' 
   },
-
   // Web Design Projects
   { 
     id: 3, 
     category: 'Web Design', 
     title: 'The Gallery Cafe Website', 
     image: 'https://i.imgur.com/Vr1s6wK.png', 
-    link: 'https://github.com/Niwarthana00/Restaurant-Management-System' 
+    link: 'https://github.com/Niwarthana00/Restaurant-Management-System'  
   },
   { 
     id: 4, 
@@ -33,7 +32,6 @@ const projectData = [
     image: 'https://i.imgur.com/H6TeWGc.png', 
     link: 'https://github.com/Niwarthana00/ICBT-SOC-TECHFIX-C-' 
   },
-
   // UI/UX Projects
   { 
     id: 5, 
@@ -49,13 +47,12 @@ const projectData = [
     image: 'https://i.imgur.com/agWJuhw.png', 
     link: 'https://www.figma.com/design/6mhPp53w9ZBLulYghKEy0C/Untitled?node-id=0-1&node-type=canvas&t=6hP6V7q9jH08po1v-0' 
   },
-
   // Desktop Application Projects
   { 
     id: 7, 
     category: 'Desktop Application', 
     title: 'Employee Management System', 
-    image: 'https://media.licdn.com/dms/image/v2/D562DAQGYOaBPhgHaZg/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1724488003113?e=1733749200&v=beta&t=UuqOQJXxi8A-ZcVwjJMZde1-zJtZxcTyCSXH9D5I48o', 
+    image: 'https://media.licdn.com/dms/image/v2/D5622AQEFJs_gsnxn7g/feedshare-shrink_800/feedshare-shrink_800/0/1724690228624?e=1738195200&v=beta&t=rzXz4KjFMxyOEQysaDY16Wt-ibiFSJh5UF_ZDYZ_p2o', 
     link: 'https://github.com/Niwarthana00/Employee_Management-_System' 
   },
   { 
@@ -67,13 +64,17 @@ const projectData = [
   },
 ];
 
-export default function Projects() {
+const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
 
   const filteredProjects =
     selectedCategory === 'All'
       ? projectData
       : projectData.filter((project) => project.category === selectedCategory);
+
+  const handleProjectClick = (link) => {
+    window.open(link, '_blank', 'noopener,noreferrer');
+  };
 
   return (
     <div className="projects-container" id="projects">
@@ -94,17 +95,21 @@ export default function Projects() {
       </div>
       <div className="project-list">
         {filteredProjects.map((project) => (
-          <div
-            key={project.id}
-            className="project-card"
-            onClick={() => window.location.href = project.link}
-          >
+          <div key={project.id} className="project-card">
             <img src={project.image} alt={project.title} />
             <h3>{project.title}</h3>
             <p>{project.category}</p>
+            <button 
+              onClick={() => handleProjectClick(project.link)}
+              className="project-link-button"
+            >
+              View Project
+            </button>
           </div>
         ))}
       </div>
     </div>
   );
-}
+};
+
+export default Projects;

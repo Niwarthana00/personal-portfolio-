@@ -9,7 +9,7 @@ export default function NavBar() {
   };
 
   const handleDownloadCV = () => {
-    window.open('https://drive.google.com/file/d/1BFvMptz_lJlK-DzZg_9jiGf3R-SE2x0h/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1sf-O4p5taKvgaKzW2FehUzGZbDh4AoOn/view?usp=sharing', '_blank');
 };
 
 

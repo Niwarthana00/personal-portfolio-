@@ -11,7 +11,7 @@ export default function Contactus() {
   const [toast, setToast] = useState({
     show: false,
     message: "",
-    type: "", // "success" or "error"
+    type: "",
   });
 
   const handleInputChange = (e) => {

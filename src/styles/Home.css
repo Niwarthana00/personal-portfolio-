@@ -12,24 +12,9 @@ body {
 }
 .home-container {
   height: 100vh;
-  background: linear-gradient(#FFEFF5, #FFCADE, #FFFFFF);
-  /* overflow-x: hidden; */
+  background: linear-gradient(#FFEFF5, #FFCADE ,#FFFFFF);
+  overflow-x: hidden;
 }
-/* Customize the scrollbar */
-.home-container::-webkit-scrollbar {
-  width: 5px;
-  background: transparent; /* Make the background transparent */
-}
-
-.home-container::-webkit-scrollbar-thumb {
-  background: #E70159; /* Style the scrollbar thumb */
-  border-radius: 10px;
-}
-
-.home-container::-webkit-scrollbar-thumb:hover {
-  background: #C0014A; /* Change the color on hover */
-}
-
 
 .hero-section {
   display: flex;
@@ -172,6 +157,7 @@ h3 {
   }
 }
 
+/* Additional Responsive Breakpoint for Very Small Screens */
 @media screen and (max-width: 480px) {
   .hero-section {
       padding: 15% 2%;

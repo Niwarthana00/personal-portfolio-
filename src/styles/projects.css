@@ -149,8 +149,54 @@ p {
   color: #777;
   margin: 0;
 }
+.project-card {
+  position: relative;
+  padding-bottom: 60px; /* Space for the button */
+  min-height: 400px; /* Minimum height for consistency */
+  display: flex;
+  flex-direction: column;
+}
 
-/* Responsive Design */
+.project-link-button {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  width: 90%; 
+  margin: 0 auto; 
+  background-color: #ffc4e4;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  width: 305px;
+  height: 44px;
+  margin-bottom: -20px;
+  font-weight: bold;
+}
+
+.project-link-button:hover {
+  background-color: #ff8eca;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.project-card h3 {
+  margin: 15px 0 10px 0;
+}
+
+.project-card p {
+  margin: 0 0 10px 0;
+}
+
+
 @media screen and (max-width: 768px) {
   .projects-container {
       padding: 10px;
