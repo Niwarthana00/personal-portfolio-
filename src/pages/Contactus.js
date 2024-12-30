@@ -65,8 +65,7 @@ export default function Contactus() {
             <h2>Quick Contact</h2>
             <h1>Leave a Message</h1>
             <p>
-              Labore accusan in modo compungi, iacentem substanti ales um se sed
-              esse haec.
+            We’d love to hear from you! Please leave your message below, and we’ll get back to you as soon as possible.
             </p>
           </div>
         </div>
