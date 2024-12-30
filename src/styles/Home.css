@@ -33,7 +33,10 @@ body {
   max-width: 100%;
   padding: 0 15px;
 }
-
+.img{
+  width: 100px;
+  height: 100px;
+}
 .social-icons {
   margin-left: -11px;
   margin-top: 20px;

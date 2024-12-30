@@ -31,7 +31,7 @@ export default function Home() {
           </div>
         </div>
         <div className="profile-pic">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeEg8CMUhq--397HcPJos2vX96YukJdLZbFw&s" alt="Niwarthana" />
+          <img src="https://i.imgur.com/CRXNei4.png" alt="Niwarthana" />
         </div>
       </div>
       <Services />
