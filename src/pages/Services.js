@@ -25,9 +25,7 @@ export default function Services() {
           <div className="service-card">
             <i className="icon fas fa-paint-brush"></i>
             <h3>UI/UX</h3>
-            <p>Crafting intuitive and visually appealing interfaces that deliver seamless user experiences.
-
-</p>
+            <p>Crafting intuitive and visually appealing interfaces that deliver seamless user experiences.</p>
           </div>
           <div className="service-card">
             <i className="icon fas fa-database"></i>
