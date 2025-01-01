@@ -55,6 +55,7 @@ const projectData = [
     image: 'https://media.licdn.com/dms/image/v2/D5622AQEFJs_gsnxn7g/feedshare-shrink_800/feedshare-shrink_800/0/1724690228624?e=1738195200&v=beta&t=rzXz4KjFMxyOEQysaDY16Wt-ibiFSJh5UF_ZDYZ_p2o', 
     link: 'https://github.com/Niwarthana00/Employee_Management-_System' 
   },
+
   { 
     id: 8, 
     category: 'Desktop Application', 
@@ -62,6 +63,15 @@ const projectData = [
     image: 'https://i.imgur.com/LhSLBuG.png', 
     link: 'https://github.com/Niwarthana00/ICBT-SOC-TECHFIX-C-' 
   },
+
+  { 
+    id: 9, 
+    category: 'Web Design', 
+    title: 'Gobus.lk(Bus reservation system)', 
+    image: 'https://i.imgur.com/Oip7mZD.png', 
+    link: 'https://github.com/Niwarthana00/gobus.lk' 
+  },
+
 ];
 
 const Projects = () => {

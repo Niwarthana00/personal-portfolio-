@@ -5,7 +5,6 @@ import '../styles/Home.css';
 import { useAnimatedRoles } from '../script/Animation.js';
 import Services from './Services'; // Import Services from the pages folder
 import Projects from './Projects.js';
-import Blogs from './Blogs.js';
 import Contactus from './Contactus.js';
 import Footer from '../components/Footer.js';
 
@@ -69,7 +68,6 @@ export default function Home() {
       </div>
       <Services />
       <Projects/>
-      <Blogs/>
       <Contactus/>
       <Footer/>
     </div>
