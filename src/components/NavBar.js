@@ -34,7 +34,7 @@ export default function NavBar() {
           <li><a href="#home" onClick={toggleMenu}>Home</a></li>
           <li><a href="#about" onClick={toggleMenu}>Services</a></li>
           <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
-          <li><a href="#blogs" onClick={toggleMenu}>Blogs</a></li>
+          {/* <li><a href="#blogs" onClick={toggleMenu}>Blogs</a></li> */}
           <li><a href="#contact" onClick={toggleMenu}>Contact Us</a></li>
           <li className="mobile-cv-button">
             <button onClick={handleDownloadCV}>Download CV</button>

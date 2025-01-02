@@ -47,6 +47,7 @@ const projectData = [
     image: 'https://i.imgur.com/agWJuhw.png', 
     link: 'https://www.figma.com/design/6mhPp53w9ZBLulYghKEy0C/Untitled?node-id=0-1&node-type=canvas&t=6hP6V7q9jH08po1v-0' 
   },
+  
   // Desktop Application Projects
   { 
     id: 7, 
@@ -67,9 +68,16 @@ const projectData = [
   { 
     id: 9, 
     category: 'Web Design', 
-    title: 'Gobus.lk(Bus reservation system)', 
-    image: 'https://i.imgur.com/Oip7mZD.png', 
+    title: 'Bus reservation system (Gobus.lk)', 
+    image: 'https://i.imgur.com/TPupm4r.png', 
     link: 'https://github.com/Niwarthana00/gobus.lk' 
+  },
+  { 
+    id: 10, 
+    category: 'UI/UX', 
+    title: 'E- commerce shopping website ', 
+    image: 'https://i.imgur.com/sXqG5lS.png', 
+    link: 'https://www.figma.com/design/aPuc9CCPb1oYM6w8Y3GAUa/shopping_site?node-id=0-1&node-type=canvas&t=pM2Hz1upO4xWv8aO-0' 
   },
 
 ];
