@@ -1,15 +1,20 @@
-// App.js
+// src/App.js
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
-import ContactUs from './pages/Contactus';
+import ProjectDetails from './pages/ProjectDetails'; // Updated import path
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-      <ContactUs />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/project/:id" element={<ProjectDetails />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
