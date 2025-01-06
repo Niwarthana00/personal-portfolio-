@@ -15,6 +15,10 @@ export default function NavBar() {
     window.open('https://drive.google.com/file/d/1sf-O4p5taKvgaKzW2FehUzGZbDh4AoOn/view?usp=sharing', '_blank');
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -24,30 +28,33 @@ export default function NavBar() {
 
   const handleNavigation = (e, path) => {
     e.preventDefault();
-    const sectionId = path.replace('#', '');
 
-    if (location.pathname !== '/') {
-      // If we're not on the home page, navigate home first
-      navigate('/');
-      // Wait for navigation to complete before scrolling
-      setTimeout(() => {
-        scrollToSection(sectionId);
-      }, 100);
+    if (path === '/' || path === 'top') {
+      if (location.pathname !== '/') {
+        navigate('/');
+      } else {
+        scrollToTop();
+      }
     } else {
-      // If we're already on home page, just scroll
-      scrollToSection(sectionId);
+      const sectionId = path.replace('#', '');
+      if (location.pathname !== '/') {
+        navigate('/');
+        setTimeout(() => {
+          scrollToSection(sectionId);
+        }, 100);
+      } else {
+        scrollToSection(sectionId);
+      }
     }
-    
+
     setIsMenuOpen(false);
   };
 
   const handleLogoClick = (e) => {
     e.preventDefault();
-    navigate('/');
-    setIsMenuOpen(false);
+    handleNavigation(e, 'top');
   };
 
-  // Handle initial scroll when navigating back to home page
   useEffect(() => {
     if (location.pathname === '/' && location.hash) {
       const sectionId = location.hash.replace('#', '');
@@ -64,8 +71,8 @@ export default function NavBar() {
           <a href="/" onClick={handleLogoClick}>Niwarthana</a>
         </div>
 
-        <div 
-          className={`menu-toggle ${isMenuOpen ? 'active' : ''}`} 
+        <div
+          className={`menu-toggle ${isMenuOpen ? 'active' : ''}`}
           onClick={toggleMenu}
         >
           <span></span>
@@ -74,7 +81,7 @@ export default function NavBar() {
         </div>
 
         <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-          <li><a href="/" onClick={(e) => handleNavigation(e, '/')}>Home</a></li>
+          <li><a href="/" onClick={(e) => handleNavigation(e, 'top')}>Home</a></li>
           <li><a href="#about" onClick={(e) => handleNavigation(e, '#about')}>Services</a></li>
           <li><a href="#projects" onClick={(e) => handleNavigation(e, '#projects')}>Projects</a></li>
           <li><a href="#contact" onClick={(e) => handleNavigation(e, '#contact')}>Contact Us</a></li>
@@ -83,8 +90,8 @@ export default function NavBar() {
           </li>
         </ul>
 
-        <button 
-          className="cv-button desktop-cv-button" 
+        <button
+          className="cv-button desktop-cv-button"
           onClick={handleDownloadCV}
         >
           Download CV

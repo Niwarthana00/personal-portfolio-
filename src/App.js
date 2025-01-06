@@ -1,9 +1,8 @@
-// src/App.js
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
-import ProjectDetails from './pages/ProjectDetails'; // Updated import path
+import ProjectDetails from './pages/ProjectDetails';
 
 function App() {
   return (
@@ -12,7 +11,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/project/:id" element={<ProjectDetails />} />
-
         </Routes>
       </div>
     </BrowserRouter>

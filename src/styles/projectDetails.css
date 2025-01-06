@@ -53,6 +53,7 @@ body{
   background: #fbf6f6;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-top: 6rem;
+  height: auto;
 }
 
 .features{
@@ -156,8 +157,9 @@ body{
 
 .main-features ul {
   list-style: none;
-  padding: 0;
-  margin-left: 0rem;
+    padding: 0;
+    margin-left: 14rem;
+    text-align: left;
 }
 
 .main-features li {

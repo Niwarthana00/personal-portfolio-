@@ -14,7 +14,19 @@ const DownloadButton = ({ projectId }) => {
       case 2:
         githubLink = 'https://github.com/Niwarthana00/Dog-Nutrition-Mobile-Application';
         break;
+      case 3:
+          githubLink = 'https://github.com/Niwarthana00/Restaurant-Management-System';
+          break;
       case 4:
+        githubLink = 'https://github.com/Niwarthana00/ICBT-SOC-TECHFIX-C-';
+        break;
+      case 5: 
+        githubLink = 'https://www.figma.com/design/qoMup9y2Nng8ancZiZyPFO/Untitled?t=0Twz1yqxla17zfAn-0Q9wQ'; 
+        break;
+      case 7:
+        githubLink = 'https://github.com/Niwarthana00/Employee_Management-_System';
+        break;
+      case 8:
         githubLink = 'https://github.com/Niwarthana00/ICBT-SOC-TECHFIX-C-';
         break;
       case 9:

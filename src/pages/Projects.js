@@ -6,7 +6,7 @@ import '../styles/projects.css';
 const projectData = [
   { 
     id: 1, 
-    category: 'App Design', 
+    category: 'Mobile application', 
     title: 'School Service Bus Notification App', 
     image: 'https://i.imgur.com/cpPwOou.png', 
     link: '',
@@ -15,7 +15,7 @@ const projectData = [
   },
   { 
     id: 2, 
-    category: 'App Design', 
+    category: 'Mobile application', 
     title: 'Dog Nutrition Food App', 
     image: 'https://i.imgur.com/tB0qcze.png', 
     link: '',
@@ -24,7 +24,7 @@ const projectData = [
   },
   { 
     id: 3, 
-    category: 'Web Design', 
+    category: 'Web application', 
     title: 'The Gallery Cafe Website', 
     image: 'https://i.imgur.com/vETc3Rj.png', 
     link: '',
@@ -34,7 +34,7 @@ const projectData = [
   
   { 
     id: 4, 
-    category: 'Web Design', 
+    category: 'Web application', 
     title: 'Computer Shop Website', 
     image: 'https://i.imgur.com/W9oeDxX.png', 
     link: '',
@@ -44,18 +44,18 @@ const projectData = [
 
   { 
     id: 5, 
-    category: 'UI/UX', 
+    category: 'UI/UX Design', 
     title: 'School Service App UI Design', 
-    image: 'https://i.imgur.com/2gzBJVv.png', 
+    image: 'https://i.imgur.com/9auYsFG.png', 
     link: '',
     technologies: ['Figma', 'Adobe XD'],
     features: ['User flow design', 'Interactive prototypes', 'Visual design system']
   },
   { 
     id: 6, 
-    category: 'UI/UX', 
+    category: 'UI/UX Design', 
     title: 'Computer Shop Web Application UI Design', 
-    image: 'https://i.imgur.com/agWJuhw.png', 
+    image: 'https://i.imgur.com/JSh6xDj.png', 
     link: '',
     technologies: ['Figma', 'Adobe Photoshop'],
     features: ['Responsive design', 'User interface components', 'Design guidelines']
@@ -64,7 +64,7 @@ const projectData = [
     id: 7, 
     category: 'Desktop Application', 
     title: 'Employee Management System', 
-    image: 'https://media.licdn.com/dms/image/v2/D5622AQEFJs_gsnxn7g/feedshare-shrink_800/feedshare-shrink_800/0/1724690228624?e=1738195200&v=beta&t=rzXz4KjFMxyOEQysaDY16Wt-ibiFSJh5UF_ZDYZ_p2o', 
+    image: 'https://i.imgur.com/v4QMsYk.png', 
     link: '',
     technologies: ['Java', 'MySQL', 'JavaFX'],
     features: ['Employee records', 'Attendance tracking', 'Payroll management']
@@ -73,14 +73,14 @@ const projectData = [
     id: 8, 
     category: 'Desktop Application', 
     title: 'Computer Shop Admin Panel', 
-    image: 'https://i.imgur.com/LhSLBuG.png', 
+    image: 'https://i.imgur.com/dSJH7XW.png', 
     link: '',
     technologies: ['Java', 'MySQL', 'Swing'],
     features: ['Inventory management', 'Sales tracking', 'Report generation']
   },
   { 
     id: 9, 
-    category: 'Web Design', 
+    category: 'Web application', 
     title: 'Bus reservation system (Gobus.lk)', 
     image: 'https://i.imgur.com/TPupm4r.png', 
     link: '',
@@ -89,7 +89,7 @@ const projectData = [
   },
   { 
     id: 10, 
-    category: 'UI/UX', 
+    category: 'UI/UX Design', 
     title: 'E-commerce shopping website', 
     image: 'https://i.imgur.com/sXqG5lS.png', 
     link: '',
@@ -118,7 +118,7 @@ const Projects = () => {
       </p>
 
       <div className="tab-menu">
-        {['All', 'App Design', 'Web Design', 'UI/UX', 'Desktop Application'].map((category) => (
+        {['All', 'Mobile application', 'Web application', 'Desktop Application', 'UI/UX Design'].map((category) => (
           <button
             key={category}
             className={`tab-button ${selectedCategory === category ? 'active' : ''}`}

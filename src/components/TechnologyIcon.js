@@ -9,6 +9,15 @@ export const technologyIcons = {
   '.NET': 'https://miro.medium.com/v2/resize:fit:1200/1*K6zMaeRnj8w-Ai8PJILUYA.png',
   'C#': 'https://miro.medium.com/v2/resize:fit:375/1*NhpIIUL7AFgKKn30gKoDUw.png',
   'SQL Server': 'https://i.imgur.com/WMQ7s2a.png',
+  'Html': 'https://i.imgur.com/2BbESbX.png',
+  'PHP': 'https://i.imgur.com/BIbj7eY.png',
+  'Javascript': 'https://i.imgur.com/06Q3p4q.png',
+  'Mysql': 'https://i.imgur.com/L7UVlwi.png',
+  'Java': 'https://i.imgur.com/05ObANe.png',
+  'MySQL': 'https://i.imgur.com/L7UVlwi.png',
+  'MySQL': 'https://i.imgur.com/L7UVlwi.png',
+  'Figma': 'https://i.imgur.com/xRGn6Zi.png',
+
 
  
 };

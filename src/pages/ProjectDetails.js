@@ -78,10 +78,46 @@ const projectData = [
     },
   },
   {
+    id: 3,
+    category: 'Web Design',
+    title: 'Restaurant Management System',
+    mainImage: 'https://i.imgur.com/vETc3Rj.png',
+    thumbnails: [
+      'https://i.imgur.com/qQRO8NO.png',
+      'https://i.imgur.com/YMdSRcX.png',
+      'https://i.imgur.com/V2tlBtb.png',
+      'https://i.imgur.com/hiM5xkT.png',
+    ],
+    technologies: ['Html',  'PHP', 'Javascript', 'Mysql'],
+    overview:
+      'The Restaurant Management System is a robust platform for managing online food orders, table reservations, and customer interactions. Users can browse through categories, add items to their cart, place orders, or pre-order meals. It also features a contact page with location mapping for easy navigation to the restaurant.',
+    techStack: {
+      frontend: 'Developed using modern web technologies for a responsive and engaging UI',
+      backend: ['MySQL', 'PHP for server-side scripting'],
+    },
+    features: {
+      customerPanel: [
+        'Online Food Ordering: Browse menu items by categories, add to cart, and place online orders',
+        'Pre-Ordering: Schedule food orders in advance',
+        'Table Reservation: Reserve tables for dine-in',
+        'Contact Us: View restaurant location on an integrated map',
+      ],
+      adminPanel: [
+        'Orders Management: View, manage, and cancel online and table reservations',
+        'Products Management: Add, edit, delete products and categories',
+        'Users Management: View customers, and add, edit, or delete staff members',
+      ],
+      staffPanel: [
+        'Orders Section: View and manage orders assigned by the admin',
+      ],
+    },
+  },
+  
+  {
     id: 4,
     category: 'Web Design',
     title: 'Computer Shop Website',
-    mainImage: 'https://i.imgur.com/H6TeWGc.png',
+    mainImage: 'https://i.imgur.com/W9oeDxX.png',
     thumbnails: [
       'https://i.imgur.com/XGULXTK.png',
       'https://i.imgur.com/yl41iQE.png',
@@ -116,6 +152,107 @@ const projectData = [
       ]
     },
   },
+  {
+    id: 5,
+    category: 'UI/UX',
+    title: 'School Service App UI Design',
+    mainImage: 'https://i.imgur.com/9auYsFG.png',
+    thumbnails: [
+      'https://i.imgur.com/4oZuhpW.png',
+      'https://i.imgur.com/mZbUGu2.png',
+      'https://i.imgur.com/HA4lWjD.png',
+      'https://i.imgur.com/YrQeR3Q.png',
+    ],
+    technologies: ["Figma"],
+    overview: "The Safe Ride App UI design is simple and easy to use, made especially for parents aged 30–50. It uses orange and white colors to make the app look friendly and clear. Icons are added to help users find what they need quickly, making the app more user-friendly. Images are also used to make the design easier to understand. The layout is clean and organized, so parents can use the app without any trouble.",
+   
+    features: {
+      Driverrside: [
+       
+      ],
+
+      Parentside: [
+       
+      ],
+    
+    },
+  },
+ 
+  {
+    "id": 7,
+    "category": "Desktop Application",
+    "title": "Employee Management System",
+    "mainImage": "https://i.imgur.com/v4QMsYk.png",
+    "thumbnails": [
+      "https://i.imgur.com/4QtrVe5.png",
+      "https://i.imgur.com/D7Bi3j8.jpeg",
+      "https://i.imgur.com/Eq5fwPs.png",
+      "https://i.imgur.com/PmlFTBN.png"
+    ],
+    "technologies": [
+      "Java",
+      "MySQL"
+      
+    ],
+    "overview": "The Employee Management System is a computer program made for Colombo Institute of Studies to handle employee information digitally. Instead of using paper files, HR Managers can easily add new departments, job positions, and employee details through this system. They can also quickly search for any employee information they need. The system also lets administrators create accounts for HR staff members. All this information is safely stored in computer files, making it simple to keep track of employee records and access them whenever needed.",
+    "techStack": {
+      "frontend": "JavaFX for creating an intuitive and responsive desktop interface",
+      "backend": [
+        "Java for implementing  OOP concepts",
+        "MySQL for database management"
+      ]
+    },
+    "features": {
+      "hrManagerPanel": [
+        "Department Management: Add and manage different departments within the institute",
+        "Designation Management: Create and maintain various job designations",
+        "Employee Management: Add new employees with complete details and assign to departments",
+        "Advanced Search: Search employees by department, designation, name, or EPF number",
+        "Data Persistence: All records are saved and retrieved from files"
+      ],
+      "adminPanel": [
+        "User Management: Create and manage accounts for HR Manager and HR Assistant",
+        "Access Control: Implement role-based access control for system security",
+        "System Configuration: Manage system-wide settings and permissions"
+      ]
+    },
+    "oopConcepts": {
+      "inheritance": "Implements hierarchical class structure for different user types (Admin, HR Manager)",
+      "polymorphism": "Uses method overriding for different search implementations",
+      "encapsulation": "Data members are private with public getter/setter methods",
+      "abstraction": "Abstract classes and interfaces for user roles and data management"
+    }
+  },
+
+  {
+    id: 8,
+    category: 'Web Design',
+    title: 'Computer Shop Admin Panel',
+    mainImage: 'https://i.imgur.com/dSJH7XW.png',
+    thumbnails: [
+      'https://i.imgur.com/uJiClh1.png',
+      'https://i.imgur.com/Lr4hsUO.png',
+      'https://i.imgur.com/2IyWqik.png',
+      'https://i.imgur.com/MgdmXax.png',
+    ],
+    technologies: ['.NET', 'C#', 'SQL Server'],
+    overview:
+    "A desktop application designed for computer shop administrators to manage products, categories, customer details, appointments, and messages seamlessly.",
+    techStack: {
+      frontend: "Developed with .NET interactive and dynamic user interface.",
+      backend: [".NET", "C#", "SQL Server"],
+    },
+    features: {
+     "adminPanel": [
+      "Category Management: View, add, edit, and delete product categories",
+      "Product Management: Manage product details including name, price, and stock levels",
+      "Customer Details: View customer profiles and manage their information",
+      "Appointment Tracking: Monitor and manage customer appointments",
+      "Message Inbox: View and respond to messages sent by customers"
+    ]
+    },
+  },
+
   {
     id: 9,
     category: 'Web Application',

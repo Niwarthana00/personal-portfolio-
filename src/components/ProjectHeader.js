@@ -7,15 +7,22 @@ const ProjectHeader = ({ project }) => {
         return 'https://i.imgur.com/yXWum8p.png'; 
       case 2: 
         return 'https://i.imgur.com/T4FJyY8.png'; 
+      case 3: 
+        return 'https://i.imgur.com/m5sWi0H.png'; 
       case 4: 
         return 'https://i.imgur.com/6o95acR.png'; 
+      case 5:
+        return 'https://i.imgur.com/yXWum8p.png';
+      case 7: 
+        return 'https://i.imgur.com/jmQhRkD.png'; 
+      case 8:
+        return 'https://i.imgur.com/6o95acR.png';
       case 9: 
         return 'https://i.imgur.com/lkQ4X7s.png'; 
       default:
         return '/images/default-logo.png'; 
     }
   };
-
   const getLogoStyle = (projectId) => {
     const baseStyle = {
       width: 'auto',
