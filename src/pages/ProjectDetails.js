@@ -6,6 +6,7 @@ import TechnologyIcon from '../components/TechnologyIcon';
 import ProjectOverview from '../components/ProjectOverview';
 import ProjectFeatures from '../components/ProjectFeatures';
 import ProjectHeader from '../components/ProjectHeader';
+import DownloadButton from '../components/DownloadButton';
 
 const projectData = [
   {
@@ -80,7 +81,7 @@ const projectData = [
     id: 4,
     category: 'Web Design',
     title: 'Computer Shop Website',
-    mainImage: 'https://i.imgur.com/W9oeDxX.png',
+    mainImage: 'https://i.imgur.com/H6TeWGc.png',
     thumbnails: [
       'https://i.imgur.com/XGULXTK.png',
       'https://i.imgur.com/yl41iQE.png',
@@ -156,7 +157,6 @@ const projectData = [
     },
   },
 ];
-
 const ProjectDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -214,7 +214,7 @@ const ProjectDetails = () => {
             </ul>
           </div>
 
-          <button className="download-btn">Download</button>
+          <DownloadButton projectId={project.id} />
         </div>
       </div>
 

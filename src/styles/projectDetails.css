@@ -278,7 +278,9 @@ body{
   color: white;
   cursor: pointer;
 }
-
+.new{
+  margin-left: 1rem;
+}
 
 @media (max-width: 768px) {
   .main-content {

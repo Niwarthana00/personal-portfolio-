@@ -7,6 +7,8 @@ const ProjectHeader = ({ project }) => {
         return 'https://i.imgur.com/yXWum8p.png'; 
       case 2: 
         return 'https://i.imgur.com/T4FJyY8.png'; 
+      case 4: 
+        return 'https://i.imgur.com/6o95acR.png'; 
       case 9: 
         return 'https://i.imgur.com/lkQ4X7s.png'; 
       default:
@@ -31,6 +33,12 @@ const ProjectHeader = ({ project }) => {
         return {
           ...baseStyle,
           height: '70px', // Specific height for Dog Nutrition Food App
+        };
+        case 4: 
+        return {
+          ...baseStyle,
+          height: '55px', 
+          width: '100px', // Specific height for ICBT SOC TECHFIX
         };
       case 9: 
         return {
