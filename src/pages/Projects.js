@@ -17,7 +17,7 @@ const projectData = [
     id: 2, 
     category: 'App Design', 
     title: 'Dog Nutrition Food App', 
-    image: 'https://i.imgur.com/KvLI1Jq.jpeg', 
+    image: 'https://i.imgur.com/tB0qcze.png', 
     link: '',
     technologies: ['React Native', 'Firebase', 'Node.js'],
     features: ['Personalized meal plans', 'Nutrition tracking', 'Food recommendations']
@@ -26,20 +26,22 @@ const projectData = [
     id: 3, 
     category: 'Web Design', 
     title: 'The Gallery Cafe Website', 
-    image: 'https://i.imgur.com/Vr1s6wK.png', 
+    image: 'https://i.imgur.com/vETc3Rj.png', 
     link: '',
     technologies: ['React', 'Node.js', 'MongoDB'],
     features: ['Online menu', 'Table reservations', 'Event bookings']
   },
+  
   { 
     id: 4, 
     category: 'Web Design', 
     title: 'Computer Shop Website', 
-    image: 'https://i.imgur.com/H6TeWGc.png', 
+    image: 'https://i.imgur.com/W9oeDxX.png', 
     link: '',
     technologies: ['React', 'Node.js', 'MySQL'],
     features: ['Product catalog', 'Shopping cart', 'User authentication']
   },
+
   { 
     id: 5, 
     category: 'UI/UX', 

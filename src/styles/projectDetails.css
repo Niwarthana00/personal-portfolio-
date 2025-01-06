@@ -157,7 +157,7 @@ body{
 .main-features ul {
   list-style: none;
   padding: 0;
-  margin-left: -2rem;
+  margin-left: 0rem;
 }
 
 .main-features li {
@@ -245,6 +245,40 @@ body{
   margin-bottom: 0.8rem;
   line-height: 1.5;
 }
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+}
+
+.modal-image {
+  max-width: 40%;
+  max-height: 50%;
+}
+
+.close-btn {
+  position: absolute;
+  top: -30px;
+  right: 135px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
 
 @media (max-width: 768px) {
   .main-content {

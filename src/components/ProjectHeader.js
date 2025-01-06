@@ -4,13 +4,13 @@ const ProjectHeader = ({ project }) => {
   const getProjectLogo = (projectId) => {
     switch (projectId) {
       case 1: 
-        return 'https://i.imgur.com/yXWum8p.png'; // School Bus Notification System logo
+        return 'https://i.imgur.com/yXWum8p.png'; 
       case 2: 
-        return 'https://i.imgur.com/T4FJyY8.png'; // Dog Nutrition Food App logo (replace with actual logo URL)
+        return 'https://i.imgur.com/T4FJyY8.png'; 
       case 9: 
-        return 'https://i.imgur.com/lkQ4X7s.png'; // GOBUS.LK logo
+        return 'https://i.imgur.com/lkQ4X7s.png'; 
       default:
-        return '/images/default-logo.png'; // Default logo
+        return '/images/default-logo.png'; 
     }
   };
 

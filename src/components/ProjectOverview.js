@@ -42,7 +42,8 @@ const ProjectOverview = ({ project }) => {
           </div>
         )}
       </div>
-    </section>
+      </section>
+  
   );
 };
 

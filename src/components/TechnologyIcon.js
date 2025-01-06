@@ -6,9 +6,11 @@ export const technologyIcons = {
   'Node.js': 'https://i.imgur.com/7wMpRDf.png',
   'Flutter': 'https://cdn.freelogovectors.net/wp-content/uploads/2023/09/flutter_logo-freelogovectors.net_-180x133.png',
   'Firebase': 'https://i.imgur.com/iEOzzZE.png',
-  'React Native': 'https://i.imgur.com/sZwDrBx.png', // Example React Native logo
-  'Express.js': 'https://i.imgur.com/Dkz1IbP.png', // Example Express.js logo
-  'Redux': 'https://i.imgur.com/Ha8YSU9.png', // Example Redux logo
+  '.NET': 'https://miro.medium.com/v2/resize:fit:1200/1*K6zMaeRnj8w-Ai8PJILUYA.png',
+  'C#': 'https://miro.medium.com/v2/resize:fit:375/1*NhpIIUL7AFgKKn30gKoDUw.png',
+  'SQL Server': 'https://i.imgur.com/WMQ7s2a.png',
+
+ 
 };
 
 const TechnologyIcon = ({ name }) => {

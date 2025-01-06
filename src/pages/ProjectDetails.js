@@ -52,19 +52,19 @@ const projectData = [
     id: 2,
     category: 'App Design',
     title: 'Dog Nutrition Food App',
-    mainImage: 'https://i.imgur.com/cpPwOou.png',
+    mainImage: 'https://i.imgur.com/tB0qcze.png',
     thumbnails: [
-      'https://i.imgur.com/Q31DWSn.jpeg',
-      'https://i.imgur.com/HleknOK.jpeg',
-      'https://i.imgur.com/cLf9zls.jpeg',
+      'https://i.imgur.com/XeuT6wu.jpeg',
+      'https://i.imgur.com/wU3qO5J.jpeg',
+      'https://i.imgur.com/RiZZWPP.jpeg',
       'https://i.imgur.com/oWZmmgL.jpeg',
     ],
-    technologies: ['React Native', 'Firebase', 'Node.js'],
+    technologies: ['Flutter', 'Firebase'],
     overview:
       'This app offers personalized meal plans, nutrition tracking, and food recommendations for your pets. It simplifies pet care and ensures optimal nutrition.',
     techStack: {
       frontend: 'Developed with React Native for mobile compatibility',
-      backend: ['Firebase', 'Node.js'],
+      backend: ['Flutter', 'Firebase'],
     },
     features: {
       userPanel: [
@@ -74,6 +74,45 @@ const projectData = [
         'Educational Content: Access information about dog nutrition and care',
         'Payment Method: Multiple payment options for convenience',
       ],
+    },
+  },
+  {
+    id: 4,
+    category: 'Web Design',
+    title: 'Computer Shop Website',
+    mainImage: 'https://i.imgur.com/W9oeDxX.png',
+    thumbnails: [
+      'https://i.imgur.com/XGULXTK.png',
+      'https://i.imgur.com/yl41iQE.png',
+      'https://i.imgur.com/pfy2ihE.png',
+      'https://i.imgur.com/nqQTL3J.png',
+    ],
+    technologies: [".NET", "C#", "SQL Server"],
+    overview: "This website is designed to provide a comprehensive online shopping experience for computer enthusiasts. It includes customer-side features like browsing products, placing orders, and downloading quotations, while the admin panel allows for product management, supplier interactions, and order management. The site supports multiple user roles such as Customer, Supplier 1, Supplier 2, and Admin, each with tailored access to functionalities.",
+    techStack: {
+      frontend: "Developed with .NET interactive and dynamic user interface.",
+      backend: [".NET", "C#", "SQL Server"]
+    },
+    features: {
+      customerPanel: [
+        "Product Catalog: Browse products based on categories like PC builds and select products for checkout.",
+        "Shopping Cart: Add selected products to the cart and proceed with order placement.",
+        "Checkout: Secure checkout process to place orders.",
+        "Quotation Download: Generate and download quotations as PDFs.",
+        "Repair Section: Schedule appointments for repairs.",
+        "Upgrade Section: Request upgrades for products or systems."
+      ],
+      adminPanel: [
+        "Product Management: Admin can add, edit, or delete products.",
+        "Category Management: Admin can add or delete categories and assign products to them.",
+        "Order Management: Admin can view and filter past orders by date, and manage orders placed by suppliers.",
+        "Supplier Interaction: Admin can place orders with Supplier 1 and Supplier 2, view their inventory, and compare prices."
+      ],
+      supplierPanel: [
+        "Inventory Management: Supplier 1 and Supplier 2 can manage their inventory.",
+        "Order Placement: Suppliers can place orders for products they supply.",
+        "Quotation Generation: Suppliers can generate and download quotations for customers."
+      ]
     },
   },
   {
@@ -125,7 +164,7 @@ const ProjectDetails = () => {
   const project = projectData.find((p) => p.id === parseInt(id));
 
   if (!project) {
-    return <div className="project-details-container">Project not found</div>;
+    return <div className="project-details-container">Feature under development. Stay tuned for updates!</div>;
   }
 
   return (
