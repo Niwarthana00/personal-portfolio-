@@ -149,19 +149,25 @@ const Projects = () => {
       </div>
 
       <div className="project-list">
-        {filteredProjects.map((project) => (
-          <div 
-            key={project.id} 
-            className="project-card"
-            onClick={() => handleProjectClick(project.id)}
-            style={{ cursor: 'pointer' }}
-          >
-            <img src={project.image} alt={project.title} />
-            <h3>{project.title}</h3>
-            <p>{project.category}</p>
-          </div>
-        ))}
+  {filteredProjects.map((project) => (
+    <div 
+      key={project.id} 
+      className="project-card"
+      onClick={() => handleProjectClick(project.id)}
+      style={{ cursor: 'pointer' }}
+    >
+      <img src={project.image} alt={project.title} />
+      <div className="project-content">
+        <h3>{project.title}</h3>
+        <p>{project.category}</p>
       </div>
+      <div className="view-project">
+      <span style={{ marginLeft: '80px' }}>View Project</span>
+        
+      </div>
+    </div>
+  ))}
+</div>
     </div>
   );
 };

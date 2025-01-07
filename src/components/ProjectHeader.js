@@ -56,6 +56,7 @@ const ProjectHeader = ({ project }) => {
           ...baseStyle,
           height: '55px', // Specific height for GOBUS.LK
         };
+
       default:
         return baseStyle;
     }

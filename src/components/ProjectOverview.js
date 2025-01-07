@@ -39,18 +39,7 @@ const ProjectOverview = ({ project }) => {
       {project.category === 'UI/UX' ? (
         <button
           onClick={handleGoToProject}
-          style={{
-            display: "block",
-            marginTop: "20px",
-            padding: "15px 20px 12px 26px",
-            backgroundColor: "rgb(255 0 139)",
-            color: "#fff",
-            border: "none",
-            borderRadius: "5px",
-            cursor: "pointer",
-            marginLeft: "46rem",
-            fontWeight: "bold"
-          }}
+          className='style-project'
         >
           Go to Project
         </button>
