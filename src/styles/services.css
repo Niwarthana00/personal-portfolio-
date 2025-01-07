@@ -156,19 +156,17 @@
 
 /* Responsive Adjustments */
 @media screen and (max-width: 768px) {
-    .services-title, 
-    .skills-title {
+    .services-title {
         font-size: 1.5rem;
     }
 
-    .services-cards, 
-    .skills-grid {
+    .services-cards
+     {
         gap: 1.5rem;
         padding: 0.5rem;
     }
 
-    .service-card, 
-    .skill-card {
+    .service-card {
         width: calc(50% - 2rem);
         max-width: 250px;
     }
@@ -176,36 +174,45 @@
     .services-description {
         font-size: 0.9rem;
         padding: 0 1rem;
+        text-align: justify;
     }
 }
-
 @media screen and (max-width: 480px) {
-    .services-title, 
-    .skills-title {
-        font-size: 1.3rem;
-    }
-
-    .services-cards, 
+    /* Skills Section: Display 3 icons per row */
     .skills-grid {
-        gap: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        gap: 1rem; /* spacing between grid items */
     }
 
-    .service-card, 
     .skill-card {
-        width: 100%;
-        max-width: none;
-    }
-
-    .icon {
-        font-size: 2rem;
+        width: 100%; /* skill card adapts to the grid cell */
+        padding: 0.5rem;
+        text-align: center;
     }
 
     .skill-card img {
-        width: 40px;
+        width: 40px; /* smaller icon size */
         height: 40px;
     }
 
     .skill-card p {
-        font-size: 0.8rem;
+        font-size: 0.8rem; /* smaller text size */
+    }
+
+    /* Services Section: Keep single card per row */
+    .services-cards {
+        display: flex;
+        flex-direction: column; /* Stack cards vertically */
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .service-card {
+        width: 100%; /* Full width for each card */
+        max-width: none;
+        text-align: center;
     }
 }
+
+    

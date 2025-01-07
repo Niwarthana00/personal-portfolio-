@@ -1,5 +1,5 @@
 // src/pages/Projects.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/projects.css';
 
@@ -62,7 +62,7 @@ const projectData = [
   },
   { 
     id: 7, 
-    category: 'Desktop Application', 
+    category: 'Desktop application', 
     title: 'Employee Management System', 
     image: 'https://i.imgur.com/v4QMsYk.png', 
     link: '',
@@ -71,7 +71,7 @@ const projectData = [
   },
   { 
     id: 8, 
-    category: 'Desktop Application', 
+    category: 'Desktop application', 
     title: 'Computer Shop Admin Panel', 
     image: 'https://i.imgur.com/dSJH7XW.png', 
     link: '',
@@ -91,7 +91,7 @@ const projectData = [
     id: 10, 
     category: 'UI/UX Design', 
     title: 'E-commerce shopping website', 
-    image: 'https://i.imgur.com/sXqG5lS.png', 
+    image: 'https://i.imgur.com/eGL2BSC.png', 
     link: '',
     technologies: ['Figma', 'Adobe XD'],
     features: ['Shopping cart UI', 'Product catalog design', 'Checkout flow']
@@ -100,7 +100,20 @@ const projectData = [
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
+  const [isMobileView, setIsMobileView] = useState(false);
   const navigate = useNavigate();
+
+  // Monitor screen size to toggle between mobile and desktop views
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth <= 768); // Consider <=768px as mobile view
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize); // Cleanup
+  }, []);
 
   const filteredProjects = selectedCategory === 'All'
     ? projectData
@@ -110,6 +123,14 @@ const Projects = () => {
     navigate(`/project/${id}`);
   };
 
+  const categories = [
+    { full: 'All', short: 'All' },
+    { full: 'Mobile application', short: 'Mobile' },
+    { full: 'Web application', short: 'Web' },
+    { full: 'Desktop application', short: 'Desktop' },
+    { full: 'UI/UX Design', short: 'UI/UX' },
+  ];
+
   return (
     <div className="projects-container" id="projects">
       <h2>My Projects</h2>
@@ -118,13 +139,13 @@ const Projects = () => {
       </p>
 
       <div className="tab-menu">
-        {['All', 'Mobile application', 'Web application', 'Desktop Application', 'UI/UX Design'].map((category) => (
+        {categories.map((category) => (
           <button
-            key={category}
-            className={`tab-button ${selectedCategory === category ? 'active' : ''}`}
-            onClick={() => setSelectedCategory(category)}
+            key={category.full}
+            className={`tab-button ${selectedCategory === category.full ? 'active' : ''}`}
+            onClick={() => setSelectedCategory(category.full)}
           >
-            {category}
+            {isMobileView ? category.short : category.full}
           </button>
         ))}
       </div>

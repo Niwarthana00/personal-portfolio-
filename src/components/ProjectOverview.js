@@ -1,9 +1,30 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const ProjectOverview = ({ project }) => {
+  const navigate = useNavigate();
+
+  const handleGoToProject = () => {
+    let destination;
+    switch (project.id) {
+      case 5:
+        destination = '/project/1';
+        break;
+      case 6:
+        destination = '/project/4';
+        break;
+      default:
+        destination = `/project/${project.id}`;
+        break;
+    }
+    navigate(destination);
+  };
+
   return (
     <section className="project-overview">
-      <h2 className="title-over">Project Overview</h2>
+      <h2 className="title-over">
+        {project.category === 'UI/UX' ? 'Project Details' : 'Project Overview'}
+      </h2>
       <hr
         style={{
           backgroundColor: "#e4e4e4",
@@ -15,7 +36,25 @@ const ProjectOverview = ({ project }) => {
       />
       <p className="p-over">{project.overview}</p>
 
-      {project.category !== 'UI/UX' && (
+      {project.category === 'UI/UX' ? (
+        <button
+          onClick={handleGoToProject}
+          style={{
+            display: "block",
+            marginTop: "20px",
+            padding: "15px 20px 12px 26px",
+            backgroundColor: "rgb(255 0 139)",
+            color: "#fff",
+            border: "none",
+            borderRadius: "5px",
+            cursor: "pointer",
+            marginLeft: "46rem",
+            fontWeight: "bold"
+          }}
+        >
+          Go to Project
+        </button>
+      ) : (
         <>
           <h2 className="title-stack">Technology Stack</h2>
           <div className="stack-details">

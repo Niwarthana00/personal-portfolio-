@@ -22,6 +22,8 @@ const DownloadButton = ({ projectId }) => {
         break;
       case 5: 
         githubLink = 'https://www.figma.com/design/qoMup9y2Nng8ancZiZyPFO/Untitled?t=0Twz1yqxla17zfAn-0Q9wQ'; 
+      case 6: 
+        githubLink = 'https://www.figma.com/design/6mhPp53w9ZBLulYghKEy0C/Untitled?node-id=0-1&p=f&t=mAjpmDcYGDAquEVn-0'; 
         break;
       case 7:
         githubLink = 'https://github.com/Niwarthana00/Employee_Management-_System';
@@ -48,8 +50,8 @@ const DownloadButton = ({ projectId }) => {
       className="download-btn flex items-center justify-center"
       onClick={handleDownload}
     >
-      <Github className="w-5 h-5" />
-      <span className="ml-6 new">View Repository</span>
+     
+      <span className="ml-6 new">View Project</span>
     </button>
   );
 };

@@ -85,9 +85,7 @@ export default function NavBar() {
           <li><a href="#about" onClick={(e) => handleNavigation(e, '#about')}>Services</a></li>
           <li><a href="#projects" onClick={(e) => handleNavigation(e, '#projects')}>Projects</a></li>
           <li><a href="#contact" onClick={(e) => handleNavigation(e, '#contact')}>Contact Us</a></li>
-          <li className="mobile-cv-button">
-            <button onClick={handleDownloadCV}>Download CV</button>
-          </li>
+          
         </ul>
 
         <button

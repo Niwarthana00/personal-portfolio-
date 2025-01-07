@@ -13,12 +13,16 @@ const ProjectHeader = ({ project }) => {
         return 'https://i.imgur.com/6o95acR.png'; 
       case 5:
         return 'https://i.imgur.com/yXWum8p.png';
+      case 6: 
+        return 'https://i.imgur.com/6o95acR.png'; 
       case 7: 
         return 'https://i.imgur.com/jmQhRkD.png'; 
       case 8:
         return 'https://i.imgur.com/6o95acR.png';
       case 9: 
         return 'https://i.imgur.com/lkQ4X7s.png'; 
+      case 10:
+        return 'https://i.imgur.com/2hI3qwb.png';
       default:
         return '/images/default-logo.png'; 
     }

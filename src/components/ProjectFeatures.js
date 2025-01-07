@@ -75,6 +75,7 @@ const ProjectFeatures = ({ project }) => {
             </div>
           </>
         );
+
       case 3: // Restaurant Management System
         return (
           <>
@@ -127,6 +128,19 @@ const ProjectFeatures = ({ project }) => {
               <h3 className="h3-class">3. Supplier Panel:</h3>
               <ul className="ul-class">
                 {Array.isArray(project.features.supplierPanel) && project.features.supplierPanel.map((feature, index) => (
+                  <li key={index}>{feature}</li>
+                ))}
+              </ul>
+            </div>
+          </>
+        );
+      case 5: // Dog Nutrition Food App
+        return (
+          <>
+            <div>
+              <h3 className="h3-class">1. User Panel:</h3>
+              <ul className="ul-class">
+                {Array.isArray(project.features.userPanel) && project.features.userPanel.map((feature, index) => (
                   <li key={index}>{feature}</li>
                 ))}
               </ul>
@@ -203,25 +217,27 @@ const ProjectFeatures = ({ project }) => {
         return "Features for this project are not available.";
     }
   };
+    return (
+      <>
+        {project.category !== 'UI/UX' && (
+          <section className="features">
+            <h2 className="feature-title">Features</h2>
+            <hr
+              style={{
+                backgroundColor: "#e4e4e4",
+                height: "2px",
+                border: "none",
+                marginBottom: "23px",
+                marginTop: "-32px",
+              }}
+            />
+            <p className="feature-p">{renderDescription()}</p>
+            <div>{renderFeatures()}</div>
+          </section>
+        )}
+      </>
+    );
+  };
   
-  return (
-    
-    <section className="features">
-      
-      <h2 className="feature-title">Features</h2>
-      <hr
-        style={{
-          backgroundColor: "#e4e4e4",
-          height: "2px",
-          border: "none",
-          marginBottom: "23px",
-          marginTop: "-32px",
-        }}
-      />
-      <p className="feature-p">{renderDescription()}</p>
-      <div>{renderFeatures()}</div>
-    </section>
-  );
-};
-
-export default ProjectFeatures;
+  export default ProjectFeatures;
+  

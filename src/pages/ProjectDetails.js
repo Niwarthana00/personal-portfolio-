@@ -177,7 +177,23 @@ const projectData = [
     
     },
   },
- 
+  {
+    id: 6,
+    category: "UI/UX",
+    title: "Computer Shop App UI Design",
+    mainImage: "https://i.imgur.com/JSh6xDj.png",
+    thumbnails: [
+      "https://i.imgur.com/CI3IoDS.png",
+      "https://i.imgur.com/H6z3BVX.png",
+      "https://i.imgur.com/gTueNRq.png",
+      "https://i.imgur.com/NXQiKXd.png"
+    ],
+    technologies: ["Figma"],
+    overview: "The Computer Shop App UI design is sleek and modern, using a red and black color scheme to create a bold and professional look. The design focuses on simplicity and functionality, making it easy for users to browse services like building PCs, repairs, and upgrades. Clear icons and organized layouts ensure a smooth user experience, while strategically placed visuals highlight key features for quick navigation.",
+    features: 
+    { }
+  },
+  
   {
     "id": 7,
     "category": "Desktop Application",
@@ -293,6 +309,24 @@ const projectData = [
       ],
     },
   },
+
+  {
+    id: 10,
+    category: "UI/UX",
+    title: "E-Commerce Website UI Design",
+    mainImage: "https://i.imgur.com/eGL2BSC.png",
+    thumbnails: [
+      "https://i.imgur.com/eDKcHXE.png",
+      "https://i.imgur.com/ns5rrMz.png",
+      "https://i.imgur.com/4S608pN.png",
+      "https://i.imgur.com/F8AArbq.png"
+    ],
+    technologies: ["Figma"],
+    overview: "This e-commerce website UI design uses a light pink theme, creating a soft and stylish look. The design is made to attract users, especially for girls' items, and feels organized and easy to use. The catalog is designed to show products clearly and makes shopping enjoyable. The layout encourages users to browse and find items they want to buy quickly, giving a smooth and fun shopping experience.",
+    features: 
+    { }
+  },
+  
 ];
 const ProjectDetails = () => {
   const { id } = useParams();
@@ -343,13 +377,18 @@ const ProjectDetails = () => {
           </div>
 
           <div className="main-features">
-            <h2 className="h2-title">Main Features:</h2>
-            <ul>
-              {Object.keys(project.features).map((featureKey, index) => (
-                <li key={index}>{featureKey.replace(/([A-Z])/g, ' $1')}</li>
-              ))}
-            </ul>
+            {project.category !== 'UI/UX' && (
+              <>
+                <h2 className="h2-title">Main Features:</h2>
+                <ul>
+                  {Object.keys(project.features).map((featureKey, index) => (
+                    <li key={index}>{featureKey.replace(/([A-Z])/g, ' $1')}</li>
+                  ))}
+                </ul>
+              </>
+            )}
           </div>
+
 
           <DownloadButton projectId={project.id} />
         </div>

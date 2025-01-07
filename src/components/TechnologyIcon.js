@@ -16,7 +16,7 @@ export const technologyIcons = {
   'Java': 'https://i.imgur.com/05ObANe.png',
   'MySQL': 'https://i.imgur.com/L7UVlwi.png',
   'MySQL': 'https://i.imgur.com/L7UVlwi.png',
-  'Figma': 'https://i.imgur.com/xRGn6Zi.png',
+  'Figma': 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1667px-Figma-logo.svg.png',
 
 
  

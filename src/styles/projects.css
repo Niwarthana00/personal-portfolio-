@@ -232,11 +232,20 @@ p {
       font-size: 1.3rem;
   }
 
-  .tab-button {
-      width: 100%;
-      padding: 8px 15px;
+  .tab-menu {
+      flex-direction: row; /* Ensures tabs are in a row */
+      flex-wrap: nowrap; /* Prevents wrapping to the next line */
+      overflow-x: auto; /* Adds horizontal scrolling if necessary */
+      -webkit-overflow-scrolling: touch; /* Smooth scrolling for mobile */
+      gap: 10px; /* Space between tabs */
   }
 
+    .tab-button {
+      font-size: 0.8rem;
+      padding: 6px 10px;
+    }
+  
+  
   .project-card {
       width: 100%;
       max-width: none;
