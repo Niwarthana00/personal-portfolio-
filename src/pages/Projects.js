@@ -1,4 +1,3 @@
-// src/pages/Projects.js
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/projects.css';
@@ -103,16 +102,15 @@ const Projects = () => {
   const [isMobileView, setIsMobileView] = useState(false);
   const navigate = useNavigate();
 
-  // Monitor screen size to toggle between mobile and desktop views
   useEffect(() => {
     const handleResize = () => {
-      setIsMobileView(window.innerWidth <= 768); // Consider <=768px as mobile view
+      setIsMobileView(window.innerWidth <= 768);
     };
 
-    handleResize(); // Initial check
+    handleResize();
     window.addEventListener('resize', handleResize);
 
-    return () => window.removeEventListener('resize', handleResize); // Cleanup
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   const filteredProjects = selectedCategory === 'All'
@@ -152,16 +150,15 @@ const Projects = () => {
 
       <div className="project-list">
         {filteredProjects.map((project) => (
-          <div key={project.id} className="project-card">
+          <div 
+            key={project.id} 
+            className="project-card"
+            onClick={() => handleProjectClick(project.id)}
+            style={{ cursor: 'pointer' }}
+          >
             <img src={project.image} alt={project.title} />
             <h3>{project.title}</h3>
             <p>{project.category}</p>
-            <button 
-              onClick={() => handleProjectClick(project.id)} 
-              className="project-link-button"
-            >
-              View Project
-            </button>
           </div>
         ))}
       </div>
