@@ -324,6 +324,9 @@ body{
     flex-wrap: wrap;
     justify-content: center;
   }
+    .project-logo {
+    display: none;
+  }
 }
 
 body {
@@ -344,9 +347,9 @@ body {
   text-align: left;
 }
 
-  .project-logo {
+  /* .project-logo {
     display: none;
-  }
+  } */
 
 
 .h2-title {

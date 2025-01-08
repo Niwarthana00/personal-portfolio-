@@ -58,7 +58,7 @@ const projectData = [
       'https://i.imgur.com/XeuT6wu.jpeg',
       'https://i.imgur.com/wU3qO5J.jpeg',
       'https://i.imgur.com/RiZZWPP.jpeg',
-      'https://i.imgur.com/oWZmmgL.jpeg',
+      'https://i.imgur.com/6eaK9Na.jpeg',
     ],
     technologies: ['Flutter', 'Firebase'],
     overview:
@@ -277,8 +277,8 @@ const projectData = [
     thumbnails: [
       'https://i.imgur.com/Gwj9LEm.png',
       'https://i.imgur.com/NNinfDr.png',
-      'https://i.imgur.com/2JCEkw2.png',
-      'https://i.imgur.com/W7b6Fjl.png',
+      'https://i.imgur.com/6tnga4B.png',
+      'https://i.imgur.com/TkGErwk.png',
     ],
     technologies: ['React', 'MongoDB', 'Node.js'],
     overview:

@@ -6,7 +6,7 @@ const ProjectHeader = ({ project }) => {
       case 1: 
         return 'https://i.imgur.com/yXWum8p.png'; 
       case 2: 
-        return 'https://i.imgur.com/T4FJyY8.png'; 
+        return 'https://i.imgur.com/i1AL7bv.png'; 
       case 3: 
         return 'https://i.imgur.com/m5sWi0H.png'; 
       case 4: 
