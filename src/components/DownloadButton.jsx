@@ -34,6 +34,9 @@ const DownloadButton = ({ projectId }) => {
       case 9:
         githubLink = 'https://github.com/Niwarthana00/gobus.lk';
         break;
+      case 10:
+        githubLink = 'https://www.figma.com/design/aPuc9CCPb1oYM6w8Y3GAUa/shopping_site?t=FyiueG3jAoaK47Mx-0Q9wQ';  
+        break;
       default:
         githubLink = '#';
     }
