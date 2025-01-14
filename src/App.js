@@ -6,6 +6,7 @@ import './App.css';
 import Home from './pages/Home';
 import ProjectDetails from './pages/ProjectDetails';
 
+
 // Route tracker component
 const RouteTracker = () => {
   const location = useLocation();
@@ -29,6 +30,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/project/:id" element={<ProjectDetails />} />
+
         </Routes>
       </div>
     </BrowserRouter>

@@ -7,6 +7,7 @@ import ProjectOverview from '../components/ProjectOverview';
 import ProjectFeatures from '../components/ProjectFeatures';
 import ProjectHeader from '../components/ProjectHeader';
 import DownloadButton from '../components/DownloadButton';
+import VideoDemo from '../components/VideoDemo';
 
 const projectData = [
   {
@@ -64,7 +65,7 @@ const projectData = [
     overview:
       'This app offers personalized meal plans, nutrition tracking, and food recommendations for your pets. It simplifies pet care and ensures optimal nutrition.',
     techStack: {
-      frontend: 'Developed with React Native for mobile compatibility',
+      frontend: 'Developed with Flutter for seamless cross-platform compatibility',
       backend: ['Flutter', 'Firebase'],
     },
     features: {
@@ -77,6 +78,7 @@ const projectData = [
       ],
     },
   },
+  
   {
     id: 3,
     category: 'Web Design',
@@ -367,31 +369,35 @@ const ProjectDetails = () => {
         </div>
 
         <div className="info-section">
-          <div className="technologies-section">
-            <h2 className="h2-title">Technologies</h2>
-            <div className="tech-stack">
-              {project.technologies.map((tech, index) => (
-                <TechnologyIcon key={index} name={tech} />
-              ))}
-            </div>
-          </div>
+  <div className="technologies-section">
+    <h2 className="h2-title">Technologies</h2>
+    <div className="tech-stack">
+      {project.technologies.map((tech, index) => (
+        <TechnologyIcon key={index} name={tech} />
+      ))}
+    </div>
+  </div>
 
-          <div className="main-features">
-            {project.category !== 'UI/UX' && (
-              <>
-                <h2 className="h2-title">Main Features:</h2>
-                <ul>
-                  {Object.keys(project.features).map((featureKey, index) => (
-                    <li key={index}>{featureKey.replace(/([A-Z])/g, ' $1')}</li>
-                  ))}
-                </ul>
-              </>
-            )}
-          </div>
+  <div className="main-features">
+    {project.category !== 'UI/UX' && (
+      <>
+        <h2 className="h2-title">Main Features:</h2>
+        <ul>
+          {Object.keys(project.features).map((featureKey, index) => (
+            <li key={index}>{featureKey.replace(/([A-Z])/g, ' $1')}</li>
+          ))}
+        </ul>
+      </>
+    )}
+  </div>
 
+  <DownloadButton projectId={project.id} />
 
-          <DownloadButton projectId={project.id} />
-        </div>
+  {project.category !== 'UI/UX' && (
+      <VideoDemo projectId={project.id} />
+    )}
+</div>
+
       </div>
 
       <div className="detailed-content">

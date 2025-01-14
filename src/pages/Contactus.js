@@ -21,39 +21,39 @@ export default function Contactus() {
 
   const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
+    backgroundApiCall();
+  };
 
+  const backgroundApiCall = async () => {
     const apiPrimaryUrl = `https://niwaaa.onrender.com/api/v1/?name=${formData.name}&email=${formData.email}&message=${formData.message}`;
+    setFormData({ name: "", email: "", message: "" });
 
     try {
       const response = await axios.post(apiPrimaryUrl);
 
       if (response.status === 200) {
         showToastMessage("success", "Email sent successfully");
-        setFormData({ name: "", email: "", message: "" });
       } else {
         throw new Error("Failed to send message");
       }
-      console.log("not come to catch");
     } catch (error) {
-      console.log("come to catch");
-      showToastMessage("warning", "Primary API failed. Retrying in 10 seconds...");
-      
+      console.log("Primary API call failed, attempting fallback API...");
+
       try {
         await delay(30000);
 
-        const fallbackUrl = `https://backupapi.onrender.com/api/v1/?name=${formData.name}&email=${formData.email}&message=${formData.message}`;
-        const fallbackResponse = await axios.post(fallbackUrl);
+        const fallbackResponse = await axios.post(apiPrimaryUrl);
 
         if (fallbackResponse.status === 200) {
           showToastMessage("success", "Email sent successfully");
-          setFormData({ name: "", email: "", message: "" });
         } else {
           throw new Error("Failed to send message via fallback API");
         }
       } catch (fallbackError) {
-        showToastMessage("error", "Failed to send email, try again");
+        console.log(fallbackError);
+        showToastMessage("error", "Failed to send message after retrying");
       }
     }
   };
@@ -107,10 +107,10 @@ export default function Contactus() {
         {toast.show && (
           <div className={`toast-message ${
             toast.type === "success" ? "toast-success" : 
-            toast.type === "warning" ? "toast-warning" : "toast-error"
+            toast.type === "info" ? "toast-info" : "toast-error"
           }`}>
             {toast.type === "success" ? "✓" : 
-             toast.type === "warning" ? "⏳" : "⚠️"} {toast.message}
+             toast.type === "info" ? "ℹ️" : "⚠️"} {toast.message}
           </div>
         )}
       </div>

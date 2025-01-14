@@ -50,6 +50,7 @@ const projectData = [
     technologies: ['Figma', 'Adobe XD'],
     features: ['User flow design', 'Interactive prototypes', 'Visual design system']
   },
+
   { 
     id: 6, 
     category: 'UI/UX Design', 
@@ -59,6 +60,7 @@ const projectData = [
     technologies: ['Figma', 'Adobe Photoshop'],
     features: ['Responsive design', 'User interface components', 'Design guidelines']
   },
+
   { 
     id: 7, 
     category: 'Desktop application', 
@@ -68,6 +70,7 @@ const projectData = [
     technologies: ['Java', 'MySQL', 'JavaFX'],
     features: ['Employee records', 'Attendance tracking', 'Payroll management']
   },
+  
   { 
     id: 8, 
     category: 'Desktop application', 
@@ -95,6 +98,7 @@ const projectData = [
     technologies: ['Figma', 'Adobe XD'],
     features: ['Shopping cart UI', 'Product catalog design', 'Checkout flow']
   }
+  
 ];
 
 const Projects = () => {
