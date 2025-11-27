@@ -2,44 +2,47 @@
 .projects-container {
   text-align: center;
   padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
   opacity: 0;
   transform: translateY(50px);
   animation: projectsContainerLoad 1s ease-in-out forwards;
-  background-color: white;
-  transform: translateY(50px);
-    animation: fadeInUp 1s ease-in-out forwards;
 }
 
 @keyframes fadeInUp {
   from {
-      opacity: 0;
-      transform: translateY(50px);
+    opacity: 0;
+    transform: translateY(50px);
   }
+
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 @keyframes cardFadeInUp {
   from {
-      opacity: 0;
-      transform: translateY(30px);
+    opacity: 0;
+    transform: translateY(30px);
   }
+
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
+
 /* Animations */
 @keyframes projectsContainerLoad {
   from {
-      opacity: 0;
-      transform: translateY(50px);
+    opacity: 0;
+    transform: translateY(50px);
   }
+
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -103,7 +106,7 @@ p {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 0.3s ease;
-  width: 300px;
+  width: calc(25% - 20px);
   text-align: left;
   opacity: 0;
   transform: translateY(30px);
@@ -111,17 +114,19 @@ p {
   position: relative;
   display: flex;
   flex-direction: column;
+  min-height: 300px;
 }
 
 /* Project Card Animations */
 @keyframes projectCardFadeIn {
   from {
-      opacity: 0;
-      transform: translateY(30px);
+    opacity: 0;
+    transform: translateY(30px);
   }
+
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -135,11 +140,12 @@ p {
   height: auto;
   display: block;
   object-fit: contain;
+  transition: transform 0.3s ease;
 }
 
 
 .project-content {
-  padding: 15px;
+  padding: 10px;
   flex-grow: 1;
 }
 
@@ -148,20 +154,17 @@ p {
 }
 
 .project-card h3 {
-  padding: 10px 15px;
-  font-size: 1.2rem;
+  padding: 5px 10px;
+  font-size: 1rem;
   color: #333;
+  margin: 5px 0;
 }
 
 .project-card p {
   color: #777;
-  margin: 5px 0 0 0;
-}
-.project-card {
-  position: relative;
-  min-height: 400px; /* Minimum height for consistency */
-  display: flex;
-  flex-direction: column;
+  margin: 0 0 5px 0;
+  padding: 0 10px;
+  font-size: 0.9rem;
 }
 
 .project-link-button {
@@ -169,8 +172,8 @@ p {
   bottom: 20px;
   left: 0;
   right: 0;
-  width: 90%; 
-  margin: 0 auto; 
+  width: 90%;
+  margin: 0 auto;
   background-color: #ffc4e4;
   color: rgb(0, 0, 0);
   border: none;
@@ -188,28 +191,10 @@ p {
   background-color: #ff8eca;
 }
 
-.project-card img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-
-
-}
-
-.project-card h3 {
-  margin: 15px 0 10px 0;
-}
-
-.project-card p {
-  margin: 0 0 10px 0;
-}
-
 .view-project {
   background-color: #ffeef7;
   color: #E70159;
-  padding: 15px 15px;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -220,80 +205,90 @@ p {
 }
 
 .project-card:hover .view-project {
-  background-color: #ffb8d3; /* Hover background color */
-  color: white; /* Hover text color */
+  background-color: #ffb8d3;
+  /* Hover background color */
+  color: white;
+  /* Hover text color */
 }
 
 @media screen and (max-width: 768px) {
   .projects-container {
-      padding: 10px;
+    padding: 10px;
   }
 
   h2 {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
+
   .project-card img {
     width: 100%;
     height: auto;
     display: block;
     object-fit: contain;
   }
+
   .tab-menu {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .tab-button {
-      width: 80%;
-      max-width: 300px;
-      margin: 5px 0;
+    width: 80%;
+    max-width: 300px;
+    margin: 5px 0;
   }
 
   .project-list {
-      gap: 15px;
+    gap: 15px;
   }
 
   .project-card {
-      width: calc(50% - 15px);
-      max-width: 300px;
+    width: calc(50% - 15px);
+    max-width: 300px;
   }
 }
 
 @media screen and (max-width: 480px) {
   h2 {
-      font-size: 1.3rem;
+    font-size: 1.3rem;
   }
 
   .tab-menu {
-      flex-direction: row; /* Ensures tabs are in a row */
-      flex-wrap: nowrap; /* Prevents wrapping to the next line */
-      overflow-x: auto; /* Adds horizontal scrolling if necessary */
-      -webkit-overflow-scrolling: touch; /* Smooth scrolling for mobile */
-      gap: 10px; /* Space between tabs */
+    flex-direction: row;
+    /* Ensures tabs are in a row */
+    flex-wrap: nowrap;
+    /* Prevents wrapping to the next line */
+    overflow-x: auto;
+    /* Adds horizontal scrolling if necessary */
+    -webkit-overflow-scrolling: touch;
+    /* Smooth scrolling for mobile */
+    gap: 10px;
+    /* Space between tabs */
   }
 
-    .tab-button {
-      font-size: 0.8rem;
-      padding: 6px 10px;
-    }
-  
-    .project-card img {
-      width: 100%;
-      height: auto;
-      display: block;
-      object-fit: contain;
-    }
+  .tab-button {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+
+  .project-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+  }
+
   .project-card {
-      width: 100%;
-      max-width: none;
+    width: 100%;
+    max-width: none;
   }
 
- 
+
   .project-card h3 {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 
   .project-card p {
-      font-size: 0.9rem;
+    font-size: 0.9rem;
   }
 }

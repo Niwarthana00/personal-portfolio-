@@ -17,9 +17,9 @@ export const technologyIcons = {
   'MySQL': 'https://i.imgur.com/L7UVlwi.png',
   'MySQL': 'https://i.imgur.com/L7UVlwi.png',
   'Figma': 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1667px-Figma-logo.svg.png',
-
-
- 
+  'Python': require('../img/blockchain/Python.png'),
+  'HTML': require('../img/blockchain/html.png'),
+  'CSS': require('../img/blockchain/CSS.png'),
 };
 
 const TechnologyIcon = ({ name }) => {

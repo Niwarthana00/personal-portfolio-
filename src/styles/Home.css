@@ -12,9 +12,10 @@ body {
   /* overflow-y: hidden; */
 
 }
+
 .home-container {
   height: 100vh;
-  background: linear-gradient(#FFEFF5, #FFCADE ,#FFFFFF);
+  background: linear-gradient(#FFEFF5, #FFCADE, #FFFFFF);
   overflow-x: hidden;
 }
 
@@ -33,10 +34,12 @@ body {
   max-width: 100%;
   padding: 0 15px;
 }
-.img{
+
+.img {
   width: 100px;
   height: 100px;
 }
+
 .social-icons {
   margin-left: -11px;
   margin-top: 20px;
@@ -117,71 +120,78 @@ h3 {
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
 }
 
 /* Responsive Adjustments */
 @media screen and (max-width: 768px) {
   .hero-section {
-      flex-direction: column;
-      padding: 10% 2%;
+    flex-direction: column;
+    padding: 10% 2%;
   }
 
   .content {
-      text-align: center;
-      order: 2;
-      margin-top: 20px;
+    text-align: center;
+    order: 2;
+    margin-top: 20px;
   }
 
   .profile-pic {
-      order: 1;
-      margin-bottom: 20px;
+    order: 1;
+    margin-bottom: 20px;
   }
 
   h1 {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   h2 {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .social-icons {
-      justify-content: center;
+    justify-content: center;
   }
 
   .hire-button {
-      width: 100%;
-      max-width: 300px;
+    width: 100%;
+    max-width: 300px;
   }
 
   .profile-pic img {
-      width: 200px;
-      height: 200px;
+    width: 200px;
+    height: 200px;
   }
 }
 
 /* Additional Responsive Breakpoint for Very Small Screens */
 @media screen and (max-width: 480px) {
   .hero-section {
-      padding: 15% 2%;
+    padding: 15% 2%;
   }
 
   h1 {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   h2 {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .profile-pic img {
-      width: 180px;
-      height: 180px;
+    width: 180px;
+    height: 180px;
   }
 
   .social-icons i {
-      font-size: 18px;
+    font-size: 18px;
   }
 }

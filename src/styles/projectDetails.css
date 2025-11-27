@@ -1,6 +1,7 @@
-body{
+body {
   background-color: #F1F1F1;
 }
+
 .project-details-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -8,30 +9,38 @@ body{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
 
-.title{
+.title {
   font-size: 36px;
   margin-top: 25px;
   font-weight: 500;
 }
-.style-project{
-  
-    display: block;
-    margin-top: 20;
-    padding: 15px 20px 12px 26px ;
-    background-color: rgb(255 0 139);
-    color: white;
-    border: none;
-    border-radius:  5px;
-    cursor: pointer;
-    margin-left: 46rem;
-    font-weight: bold;
 
+.view-project-btn {
+  display: block;
+  margin-top: 20px;
+  padding: 15px 20px;
+  background-color: #ff008b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 2rem;
+  font-weight: bold;
+  width: 75%;
+  font-size: 1.1rem;
+  text-align: center;
 }
-.h2-title{
-  margin-left: 113px;
+
+.view-project-btn:hover {
+  background-color: #d60075;
+}
+
+.h2-title {
+  margin-left: 2rem;
   font-size: 1rem;
   background: #FFD0EC;
 }
+
 .project-header {
   margin-bottom: 2rem;
 }
@@ -41,7 +50,7 @@ body{
   align-items: center;
   gap: 1rem;
   margin-top: 5rem;
-  
+
 }
 
 .company-logo {
@@ -55,61 +64,69 @@ body{
   margin-bottom: 3rem;
 }
 
-.p-frontend{
+.p-frontend {
   margin-left: -9rem;
 }
 
 .preview-section {
   flex: 2;
 }
-.project-overview{
+
+.project-overview {
   background: #fbf6f6;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-top: 6rem;
   height: auto;
 }
 
-.features{
+.features {
   background: #fbf6f6;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-top: 6rem;
   height: 53rem;
 }
-.p-over{
+
+.p-over {
   text-align: justify;
   margin-left: 49px;
 }
+
 .main-preview {
   margin-bottom: 1rem;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.title-over{
+
+.title-over {
   font-size: 23px;
   text-align: left;
   margin-left: 1rem;
   padding: 20px;
 }
-.title-stack{
+
+.title-stack {
   font-size: 1rem;
   text-align: left;
   margin-left: 2rem;
   padding: 20px;
 }
-.p-backend{
+
+.p-backend {
   text-align: left;
   margin-left: 6rem;
   margin-bottom: 2rem;
   list-style-type: disc;
 }
-.title-over2{
+
+.title-over2 {
   font-size: 1rem;
   text-align: left;
   margin-left: 60px;
   margin-top: -1rem;
 
 }
+
 .main-image {
   width: 100%;
   height: auto;
@@ -149,7 +166,7 @@ body{
   display: flex;
   gap: 3.5rem;
   margin-top: 2rem;
-  margin-left: 7rem;
+  margin-left: 2rem;
 }
 
 .tech-item {
@@ -170,9 +187,9 @@ body{
 
 .main-features ul {
   list-style: none;
-    padding: 0;
-    margin-left: 14rem;
-    text-align: left;
+  padding: 0;
+  margin-left: 2rem;
+  text-align: left;
 }
 
 .main-features li {
@@ -180,21 +197,24 @@ body{
   font-size: 1.1rem;
 }
 
-.download-btn {
-  width: 75%;
-  padding: 1rem;
-  background-color: #ff69b4;
+.video-demo-btn {
+  display: block;
+  margin-top: 1rem;
+  padding: 15px 20px;
+  background-color: #ff4d4d;
   color: white;
   border: none;
-  border-radius: 8px;
-  font-size: 1.1rem;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.2s;
-  margin-left: 7rem;
+  margin-left: 2rem;
+  font-weight: bold;
+  width: 75%;
+  font-size: 1.1rem;
+  text-align: center;
 }
 
-.download-btn:hover {
-  background-color: #ff1493;
+.video-demo-btn:hover {
+  background-color: #cc0000;
 }
 
 .detailed-content {
@@ -222,30 +242,32 @@ body{
   gap: 2rem;
 }
 
-.feature-title{
+.feature-title {
   font-size: 23px;
   text-align: left;
   margin-left: 1rem;
   padding: 20px;
 }
 
-.feature-p{
+.feature-p {
   text-align: justify;
   margin-left: 49px;
 }
 
-.h3-class{
+.h3-class {
   font-size: 1rem;
   text-align: left;
   margin-left: 2rem;
   padding: 20px;
 }
-.ul-class{
+
+.ul-class {
   text-align: left;
   margin-left: 6rem;
   margin-bottom: 2rem;
   list-style-type: disc;
 }
+
 .panel h3 {
   margin-bottom: 1rem;
   color: #333;
@@ -293,7 +315,8 @@ body{
   color: white;
   cursor: pointer;
 }
-.new{
+
+.new {
   margin-left: 1rem;
 }
 
@@ -301,17 +324,18 @@ body{
   .main-content {
     flex-direction: column;
   }
-  
+
   .thumbnails {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .video-demo-btn {
     margin-right: -1px !important;
     width: 290px !important;
-  
+
   }
-  .style-project{
+
+  .style-project {
     display: block;
     margin: 20px auto;
     padding: 15px 20px 12px 26px;
@@ -329,240 +353,8 @@ body{
     flex-wrap: wrap;
     justify-content: center;
   }
-    .project-logo {
+
+  .project-logo {
     display: none;
   }
-}
-
-body {
-  background-color: #F1F1F1;
-}
-
-.project-details-container {
-  max-width: 100%;
-  padding: 1rem;
-  margin: 0 auto;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-}
-
-.title {
-  font-size: clamp(24px, 5vw, 36px);
-  margin-top: 20px;
-  font-weight: 500;
-  text-align: left;
-}
-
-  /* .project-logo {
-    display: none;
-  } */
-
-
-.h2-title {
-  margin-left: 0;
-  font-size: 1rem;
-  background: #FFD0EC;
-  padding: 0.5rem;
-}
-
-.project-header {
-  margin-bottom: 1.5rem;
-}
-
-.logo-container {
-  flex-wrap: wrap;
-  gap: 0.8rem;
-  margin-top: 3rem;
-}
-
-.company-logo {
-  height: 35px;
-}
-
-.main-content {
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.p-frontend {
-  margin-left: 0;
-  padding: 0 1rem;
-}
-
-.preview-section {
-  width: 100%;
-}
-
-.project-overview,
-.features {
-  margin-top: 3rem;
-  height: auto;
-  padding: 1rem;
-}
-
-.p-over {
-  margin-left: 1rem;
-  padding-right: 1rem;
-}
-
-.main-preview {
-  margin-bottom: 1rem;
-}
-
-.title-over,
-.feature-title {
-  font-size: 20px;
-  margin-left: 0.5rem;
-  padding: 15px;
-}
-
-.title-stack {
-  margin-left: 1rem;
-}
-
-.p-backend,
-.ul-class {
-  margin-left: 2rem;
-  margin-right: 1rem;
-}
-
-.thumbnails {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.8rem;
-  padding: 0.5rem;
-}
-
-.thumbnail {
-  height: 80px;
-}
-
-.tech-stack {
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin-left: 0;
-}
-
-.main-features ul {
-  margin-left: 2rem;
-  padding-right: 1rem;
-}
-
-.download-btn {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-.modal-image {
-  max-width: 90%;
-  max-height: 80vh;
-}
-
-.close-btn {
-  right: 1rem;
-}
-
-/* Tablet Responsive Styles */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .project-details-container {
-    padding: 1.5rem;
-  }
-
-  .thumbnails {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .tech-stack {
-    gap: 3rem;
-  }
-
-  .main-features ul {
-    margin-left: 4rem;
-  }
-
-  .p-backend,
-  .ul-class {
-    margin-left: 4rem;
-  }
-
-  .download-btn {
-    width: 80%;
-  }
-}
-
-/* Desktop Styles */
-@media (min-width: 1025px) {
-  .project-details-container {
-    max-width: 1200px;
-    padding: 2rem;
-  }
-
-  .main-content {
-    flex-direction: row;
-    gap: 2rem;
-  }
-
-  .thumbnails {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .h2-title {
-    margin-left: 113px;
-  }
-
-  .p-frontend {
-    margin-left: -9rem;
-  }
-
-  .tech-stack {
-    margin-left: 7rem;
-    gap: 3.5rem;
-  }
-
-  .main-features ul {
-    margin-left: 14rem;
-  }
-
-  .p-backend,
-  .ul-class {
-    margin-left: 6rem;
-  }
-
-  .download-btn {
-    width: 75%;
-    margin-left: 7rem;
-  }
-}
-
-
-.button-group {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.video-demo-btn {
-  background-color: #ff3c3c;
-  color: white;
-  padding: 18px 4.5rem 17px;
-  border-radius: 0.375rem;
-  font-weight: 500;
-  transition: background-color 0.2s;
-  margin-top: 14px;
-  width: 267px;
-  margin-right: -139px;
-  font-size: 16px;
-  border: none;
-}
-
-.video-demo-btn:hover {
-  background-color: #ff0000;
-}
-
-.button-group {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
-  align-items: center;
 }

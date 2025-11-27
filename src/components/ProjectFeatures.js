@@ -177,7 +177,7 @@ const ProjectFeatures = ({ project }) => {
           </>
         );
 
-        case 8: 
+      case 8:
         return (
           <>
             <div>
@@ -190,11 +190,35 @@ const ProjectFeatures = ({ project }) => {
             </div>
           </>
         );
+      case 11: // Chain Flow - Blockchain Supply Chain Management System
+        return (
+          <>
+            <div>
+              <ul className="ul-class">
+                {Array.isArray(project.features.keyFeatures) && project.features.keyFeatures.map((feature, index) => (
+                  <li key={index}>{feature}</li>
+                ))}
+              </ul>
+            </div>
+          </>
+        );
+      case 12:
+        return (
+          <>
+            <div>
+              <ul className="ul-class">
+                {Array.isArray(project.features.keyFeatures) && project.features.keyFeatures.map((feature, index) => (
+                  <li key={index}>{feature}</li>
+                ))}
+              </ul>
+            </div>
+          </>
+        );
       default:
         return <p>No features available for this project.</p>;
     }
   };
- 
+
   const renderDescription = () => {
     switch (project.id) {
       case 1:
@@ -207,37 +231,40 @@ const ProjectFeatures = ({ project }) => {
         return "The Computer Shop Website provides three specialized panels for customers, administrators, and suppliers with comprehensive features for managing the online computer shop:";
       case 5:
         return "The School Service App UI Design project focuses on creating a user-friendly interface for a school service app with interactive prototypes and visual design systems:";
-        case 7:
+      case 7:
         return "The Bus Seat Reservation and Booking Web App offers three distinct user panels with tailored functionalities for admins, operators, and commuters:";
       case 8:
-          return "The Computer Shop Admin Panel provides an intuitive interface for administrators to manage the online computer shop with ease.";
+        return "The Computer Shop Admin Panel provides an intuitive interface for administrators to manage the online computer shop with ease.";
       case 9:
-            return "The Bus Seat Reservation and Booking Web App offers three distinct user panels with tailored functionalities for admins, operators, and commuters:";  
+        return "The Bus Seat Reservation and Booking Web App offers three distinct user panels with tailored functionalities for admins, operators, and commuters:";
+      case 11:
+        return "Chain Flow provides a secure and transparent blockchain-based supply chain management system with the following key features:";
+      case 12:
+        return "The Online Seat Reservation System provides a comprehensive booking experience with the following key features:";
       default:
         return "Features for this project are not available.";
     }
   };
-    return (
-      <>
-        {project.category !== 'UI/UX' && (
-          <section className="features">
-            <h2 className="feature-title">Features</h2>
-            <hr
-              style={{
-                backgroundColor: "#e4e4e4",
-                height: "2px",
-                border: "none",
-                marginBottom: "23px",
-                marginTop: "-32px",
-              }}
-            />
-            <p className="feature-p">{renderDescription()}</p>
-            <div>{renderFeatures()}</div>
-          </section>
-        )}
-      </>
-    );
-  };
-  
-  export default ProjectFeatures;
-  
+  return (
+    <>
+      {project.category !== 'UI/UX' && (
+        <section className="features">
+          <h2 className="feature-title">Features</h2>
+          <hr
+            style={{
+              backgroundColor: "#e4e4e4",
+              height: "2px",
+              border: "none",
+              marginBottom: "23px",
+              marginTop: "-32px",
+            }}
+          />
+          <p className="feature-p">{renderDescription()}</p>
+          <div>{renderFeatures()}</div>
+        </section>
+      )}
+    </>
+  );
+};
+
+export default ProjectFeatures;

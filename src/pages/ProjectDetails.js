@@ -78,7 +78,7 @@ const projectData = [
       ],
     },
   },
-  
+
   {
     id: 3,
     category: 'Web Design',
@@ -90,7 +90,7 @@ const projectData = [
       'https://i.imgur.com/V2tlBtb.png',
       'https://i.imgur.com/hiM5xkT.png',
     ],
-    technologies: ['Html',  'PHP', 'Javascript', 'Mysql'],
+    technologies: ['Html', 'PHP', 'Javascript', 'Mysql'],
     overview:
       'The Restaurant Management System is a robust platform for managing online food orders, table reservations, and customer interactions. Users can browse through categories, add items to their cart, place orders, or pre-order meals. It also features a contact page with location mapping for easy navigation to the restaurant.',
     techStack: {
@@ -114,7 +114,7 @@ const projectData = [
       ],
     },
   },
-  
+
   {
     id: 4,
     category: 'Web Design',
@@ -167,16 +167,16 @@ const projectData = [
     ],
     technologies: ["Figma"],
     overview: "The Safe Ride App UI design is simple and easy to use, made especially for parents aged 30–50. It uses orange and white colors to make the app look friendly and clear. Icons are added to help users find what they need quickly, making the app more user-friendly. Images are also used to make the design easier to understand. The layout is clean and organized, so parents can use the app without any trouble.",
-   
+
     features: {
       Driverrside: [
-       
+
       ],
 
       Parentside: [
-       
+
       ],
-    
+
     },
   },
   {
@@ -192,10 +192,10 @@ const projectData = [
     ],
     technologies: ["Figma"],
     overview: "The Computer Shop App UI design is sleek and modern, using a red and black color scheme to create a bold and professional look. The design focuses on simplicity and functionality, making it easy for users to browse services like building PCs, repairs, and upgrades. Clear icons and organized layouts ensure a smooth user experience, while strategically placed visuals highlight key features for quick navigation.",
-    features: 
-    { }
+    features:
+      {}
   },
-  
+
   {
     "id": 7,
     "category": "Desktop Application",
@@ -210,7 +210,7 @@ const projectData = [
     "technologies": [
       "Java",
       "MySQL"
-      
+
     ],
     "overview": "The Employee Management System is a computer program made for Colombo Institute of Studies to handle employee information digitally. Instead of using paper files, HR Managers can easily add new departments, job positions, and employee details through this system. They can also quickly search for any employee information they need. The system also lets administrators create accounts for HR staff members. All this information is safely stored in computer files, making it simple to keep track of employee records and access them whenever needed.",
     "techStack": {
@@ -255,19 +255,19 @@ const projectData = [
     ],
     technologies: ['.NET', 'C#', 'SQL Server'],
     overview:
-    "A desktop application designed for computer shop administrators to manage products, categories, customer details, appointments, and messages seamlessly.",
+      "A desktop application designed for computer shop administrators to manage products, categories, customer details, appointments, and messages seamlessly.",
     techStack: {
       frontend: "Developed with .NET interactive and dynamic user interface.",
       backend: [".NET", "C#", "SQL Server"],
     },
     features: {
-     "adminPanel": [
-      "Category Management: View, add, edit, and delete product categories",
-      "Product Management: Manage product details including name, price, and stock levels",
-      "Customer Details: View customer profiles and manage their information",
-      "Appointment Tracking: Monitor and manage customer appointments",
-      "Message Inbox: View and respond to messages sent by customers"
-    ]
+      "adminPanel": [
+        "Category Management: View, add, edit, and delete product categories",
+        "Product Management: Manage product details including name, price, and stock levels",
+        "Customer Details: View customer profiles and manage their information",
+        "Appointment Tracking: Monitor and manage customer appointments",
+        "Message Inbox: View and respond to messages sent by customers"
+      ]
     },
   },
 
@@ -325,11 +325,75 @@ const projectData = [
     ],
     technologies: ["Figma"],
     overview: "This e-commerce website UI design uses a light pink theme, creating a soft and stylish look. The design is made to attract users, especially for girls' items, and feels organized and easy to use. The catalog is designed to show products clearly and makes shopping enjoyable. The layout encourages users to browse and find items they want to buy quickly, giving a smooth and fun shopping experience.",
-    features: 
-    { }
+    features:
+      {}
   },
-  
+
+  {
+    id: 11,
+    category: 'Web Application',
+    title: 'Blockchain Supply Chain Management System',
+    mainImage: require('../img/blockchain/main.png'),
+    thumbnails: [
+      require('../img/blockchain/1.JPG'),
+      require('../img/blockchain/2.JPG'),
+      require('../img/blockchain/3.JPG'),
+      require('../img/blockchain/4.JPG'),
+    ],
+    technologies: ['Python', 'HTML', 'CSS'],
+    overview:
+      'Chain Flow is a cutting-edge blockchain-based supply chain management system that revolutionizes product tracking and ownership transfer. Built with advanced cryptographic security and distributed ledger technology, it provides complete transparency and immutability throughout the entire supply chain journey. The system implements role-based access control for Farmers, Distributors, and Retailers, ensuring secure and verifiable transactions at every step.',
+    techStack: {
+      frontend: 'Developed with HTML and CSS for a responsive user interface',
+      backend: ['Python for blockchain implementation', 'JSON-based Distributed Ledger', 'Elliptic Curve Digital Signature Algorithm (ECDSA)', 'Public/Private Key Cryptography'],
+    },
+    features: {
+      keyFeatures: [
+        'User Authentication: Secure registration and login system with role-based access (e.g., Farmer, Distributor, Retailer).',
+        'Immutable Product Registration: Allows users to register products with details (Batch ID, Name, Quantity, Location) directly onto the blockchain.',
+        'End-to-End Tracking: View the complete history of a product, tracking its journey through every transaction block.',
+        'Secure Ownership Transfer: Transfer product ownership from one user to another using email verification and cryptographic public keys.',
+        'Real-Time Dashboard: Displays total blocks, transactions, and the current status of the blockchain.',
+        'Analytics: Visual charts and statistics to monitor supply chain performance.',
+      ],
+    },
+    link: 'https://github.com/Niwarthana00/supplychain-managment-system',
+  },
+  {
+    id: 12,
+    category: 'Web Application',
+    title: 'Online Seat Reservation System',
+    mainImage: require('../img/seatbook/main.png'),
+    thumbnails: [
+      require('../img/seatbook/11.JPG'),
+      require('../img/seatbook/12.JPG'),
+      require('../img/seatbook/13.JPG'),
+      require('../img/seatbook/14.JPG'),
+    ],
+    technologies: ['HTML', 'CSS', 'PHP', 'MySQL'],
+    overview:
+      'The Online Seat Reservation System is a comprehensive web application designed to streamline the booking process for events or venues. It features an interactive hall layout visualization that allows users to view real-time seat availability and select seats with ease. The system includes a secure payment gateway, digital receipt generation, and automated email confirmations, ensuring a seamless and secure experience for both customers and administrators.',
+    techStack: {
+      frontend: 'HTML, CSS for interactive and responsive design',
+      backend: ['PHP for server-side logic', 'MySQL for database management'],
+    },
+    features: {
+      keyFeatures: [
+        'Interactive Hall Layout Visualization: Visual seat map displaying hall arrangement with real-time availability and color-coded status.',
+        'Multiple Seat Selection: Select multiple seats simultaneously with visual confirmation and deselect options.',
+        'Customer Information Form: Collects full name, email, phone number, and additional details with validation.',
+        'Booking Confirmation Page: Displays selected seat numbers, individual prices, subtotal, taxes, and total amount.',
+        'Secure Payment Gateway: Encrypted payment processing with card details input and "Agree & Pay" functionality.',
+        'Payment Success Modal: Confirmation message with booking reference, receipt download, and return to home option.',
+        'Digital Receipt Generation: Generates receipts with booking ID, customer details, event info, and QR code.',
+        'Email Confirmation System: Sends automated emails with booking summary, receipt attachment, and event information.',
+      ],
+    },
+    link: '#',
+  },
+
 ];
+
 const ProjectDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -369,34 +433,38 @@ const ProjectDetails = () => {
         </div>
 
         <div className="info-section">
-  <div className="technologies-section">
-    <h2 className="h2-title">Technologies</h2>
-    <div className="tech-stack">
-      {project.technologies.map((tech, index) => (
-        <TechnologyIcon key={index} name={tech} />
-      ))}
-    </div>
-  </div>
+          <div className="technologies-section">
+            <h2 className="h2-title">Technologies</h2>
+            <div className="tech-stack">
+              {project.technologies.map((tech, index) => (
+                <TechnologyIcon key={index} name={tech} />
+              ))}
+            </div>
+          </div>
 
-  <div className="main-features">
-    {project.category !== 'UI/UX' && (
-      <>
-        <h2 className="h2-title">Main Features:</h2>
-        <ul>
-          {Object.keys(project.features).map((featureKey, index) => (
-            <li key={index}>{featureKey.replace(/([A-Z])/g, ' $1')}</li>
-          ))}
-        </ul>
-      </>
-    )}
-  </div>
+          <div className="main-features">
+            {project.category !== 'UI/UX' && (
+              <>
+                <h2 className="h2-title">Main Features:</h2>
+                <ul>
+                  {project.id === 11 || project.id === 12
+                    ? project.features.keyFeatures.map((feature, index) => (
+                      <li key={index}>{feature.split(':')[0]}</li>
+                    ))
+                    : Object.keys(project.features).map((featureKey, index) => (
+                      <li key={index}>{featureKey.replace(/([A-Z])/g, ' $1')}</li>
+                    ))}
+                </ul>
+              </>
+            )}
+          </div>
 
-  <DownloadButton projectId={project.id} />
+          <DownloadButton projectId={project.id} />
 
-  {project.category !== 'UI/UX' && (
-      <VideoDemo projectId={project.id} />
-    )}
-</div>
+          {project.category !== 'UI/UX' && (
+            <VideoDemo projectId={project.id} />
+          )}
+        </div>
 
       </div>
 
