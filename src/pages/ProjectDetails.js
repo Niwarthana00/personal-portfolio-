@@ -431,7 +431,7 @@ const projectData = [
         'Profile Management: Manage personal details and settings'
       ]
     },
-    link: 'https://github.com/Niwarthana00/sahana',
+    link: 'https://github.com/Niwarthana00/flooding-Relief-app',
   },
 ];
 
