@@ -122,7 +122,7 @@ const projectData = [
   {
     id: 13,
     category: 'Mobile application',
-    title: 'Sahana - Disaster Relief Coordination Platform',
+    title: 'Sahana - Disaster Relief Coordination App',
     image: sahanaImage,
     link: 'https://github.com/Niwarthana00/sahana',
     technologies: ['Flutter', 'Firebase', 'Dart', 'Agora RTC'],

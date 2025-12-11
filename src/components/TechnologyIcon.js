@@ -20,6 +20,8 @@ export const technologyIcons = {
   'Python': require('../img/blockchain/Python.png'),
   'HTML': require('../img/blockchain/html.png'),
   'CSS': require('../img/blockchain/CSS.png'),
+  'Dart': 'https://upload.wikimedia.org/wikipedia/commons/7/7e/Dart-logo.png',
+  'Node.js': require('../img/sahana/nodejs.png'),
 };
 
 const TechnologyIcon = ({ name }) => {

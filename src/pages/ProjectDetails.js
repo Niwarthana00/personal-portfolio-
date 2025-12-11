@@ -402,7 +402,7 @@ const projectData = [
       require('../img/sahana/3.jpeg'),
       require('../img/sahana/4.jpeg'),
     ],
-    technologies: ['Flutter', 'Firebase', 'Dart', 'Agora RTC'],
+    technologies: ['Flutter', 'Firebase', 'Dart', 'Node.js'],
     overview:
       'Sahana is a comprehensive mobile application designed to bridge the gap between disaster victims (Beneficiaries) and those willing to help (Volunteers). It facilitates real-time coordination of relief efforts, ensuring that aid reaches those who need it most, efficiently and transparently.',
     techStack: {

@@ -303,7 +303,7 @@ const ProjectFeatures = ({ project }) => {
               height: "2px",
               border: "none",
               marginBottom: "23px",
-              marginTop: "-32px",
+              marginTop: "10px",
             }}
           />
           <p className="feature-p">{renderDescription()}</p>
