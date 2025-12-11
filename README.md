@@ -59,7 +59,7 @@ To run this project locally, follow these steps:
 
 ## 🤝 Contact
 
-Feel free to reach out to me via the contact section in the portfolio or connect with me on [LinkedIn](https://www.linkedin.com/in/niwarthana-gamage-0869a12a5/).
+Feel free to reach out to me via the contact section in the portfolio or connect with me on [LinkedIn](https://www.linkedin.com/in/niwarthana-sathyanjali-822323273/).
 
 ---
 *Created by Niwarthana*
