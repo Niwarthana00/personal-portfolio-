@@ -394,7 +394,7 @@ const projectData = [
   {
     id: 13,
     category: 'Mobile Application',
-    title: 'Sahana - Disaster Relief Coordination Platform',
+    title: 'Sahana - Disaster Relief Coordination App',
     mainImage: require('../img/sahana/mainimg.png'),
     thumbnails: [
       require('../img/sahana/1.jpeg'),

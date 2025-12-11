@@ -214,6 +214,51 @@ const ProjectFeatures = ({ project }) => {
             </div>
           </>
         );
+      case 13: // Sahana - Disaster Relief Coordination Platform
+        return (
+          <>
+            <div>
+              <h3 className="h3-class">1. User Roles:</h3>
+              <ul className="ul-class">
+                {Array.isArray(project.features.userRoles) && project.features.userRoles.map((feature, index) => (
+                  <li key={index}>{feature}</li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="h3-class">2. Request Management:</h3>
+              <ul className="ul-class">
+                {Array.isArray(project.features.requestManagement) && project.features.requestManagement.map((feature, index) => (
+                  <li key={index}>{feature}</li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="h3-class">3. Communication:</h3>
+              <ul className="ul-class">
+                {Array.isArray(project.features.communication) && project.features.communication.map((feature, index) => (
+                  <li key={index}>{feature}</li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="h3-class">4. Notifications:</h3>
+              <ul className="ul-class">
+                {Array.isArray(project.features.notifications) && project.features.notifications.map((feature, index) => (
+                  <li key={index}>{feature}</li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="h3-class">5. Security:</h3>
+              <ul className="ul-class">
+                {Array.isArray(project.features.security) && project.features.security.map((feature, index) => (
+                  <li key={index}>{feature}</li>
+                ))}
+              </ul>
+            </div>
+          </>
+        );
       default:
         return <p>No features available for this project.</p>;
     }
@@ -241,6 +286,8 @@ const ProjectFeatures = ({ project }) => {
         return "Chain Flow provides a secure and transparent blockchain-based supply chain management system with the following key features:";
       case 12:
         return "The Online Seat Reservation System provides a comprehensive booking experience with the following key features:";
+      case 13:
+        return "Sahana provides a comprehensive set of features for disaster relief coordination, including:";
       default:
         return "Features for this project are not available.";
     }
