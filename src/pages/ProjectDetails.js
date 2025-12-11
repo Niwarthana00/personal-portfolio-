@@ -391,7 +391,48 @@ const projectData = [
     },
     link: '#',
   },
-
+  {
+    id: 13,
+    category: 'Mobile Application',
+    title: 'Sahana - Disaster Relief Coordination Platform',
+    mainImage: require('../img/sahana/mainimg.png'),
+    thumbnails: [
+      require('../img/sahana/1.jpeg'),
+      require('../img/sahana/2.jpeg'),
+      require('../img/sahana/3.jpeg'),
+      require('../img/sahana/4.jpeg'),
+    ],
+    technologies: ['Flutter', 'Firebase', 'Dart', 'Agora RTC'],
+    overview:
+      'Sahana is a comprehensive mobile application designed to bridge the gap between disaster victims (Beneficiaries) and those willing to help (Volunteers). It facilitates real-time coordination of relief efforts, ensuring that aid reaches those who need it most, efficiently and transparently.',
+    techStack: {
+      frontend: 'Flutter (Cross-platform mobile application development framework)',
+      backend: ['Firebase (Auth, Firestore, Cloud Functions)', 'Agora RTC (Voice Calling)'],
+    },
+    features: {
+      userRoles: [
+        'Beneficiaries: Request aid (food, medical, shelter) and track status',
+        'Volunteers: View nearby requests on map and accept tasks'
+      ],
+      requestManagement: [
+        'Create Requests: GPS-based aid requests with urgency levels',
+        'Real-time Tracking: Live status updates (Pending, Assigned, Completed)',
+        'Map Integration: Visual representation of requests using Google Maps'
+      ],
+      communication: [
+        'In-App Chat: Real-time text messaging between parties',
+        'Voice Calling: Integrated high-quality voice calling via Agora'
+      ],
+      notifications: [
+        'Push Notifications: Alerts for request updates and messages'
+      ],
+      security: [
+        'Authentication: Secure login/registration via Firebase',
+        'Profile Management: Manage personal details and settings'
+      ]
+    },
+    link: 'https://github.com/Niwarthana00/sahana',
+  },
 ];
 
 const ProjectDetails = () => {
