@@ -25,6 +25,8 @@ const ProjectHeader = ({ project }) => {
         return 'https://i.imgur.com/2hI3qwb.png';
       case 11:
         return require('../img/blockchain/logo.png');
+      case 13:
+        return require('../img/sahana/logo.png');
       default:
         return '/images/default-logo.png';
     }
@@ -62,6 +64,11 @@ const ProjectHeader = ({ project }) => {
         return {
           ...baseStyle,
           height: '80px', // Adjust height for Chain Flow logo
+        };
+      case 13:
+        return {
+          ...baseStyle,
+          height: '70px',
         };
 
       default:
