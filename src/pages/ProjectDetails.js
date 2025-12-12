@@ -358,6 +358,7 @@ const projectData = [
       ],
     },
     link: 'https://github.com/Niwarthana00/supplychain-managment-system',
+    liveLink: 'http://niwarthana.pythonanywhere.com',
   },
   {
     id: 12,
@@ -501,6 +502,16 @@ const ProjectDetails = () => {
           </div>
 
           <DownloadButton projectId={project.id} />
+
+          {project.liveLink && (
+            <button
+              className="view-project-btn"
+              style={{ marginTop: '1rem', backgroundColor: '#007bff' }}
+              onClick={() => window.open(project.liveLink, '_blank')}
+            >
+              Visit Live Site
+            </button>
+          )}
 
           {project.category !== 'UI/UX' && (
             <VideoDemo projectId={project.id} />
