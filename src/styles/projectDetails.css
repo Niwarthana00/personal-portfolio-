@@ -15,24 +15,35 @@ body {
   font-weight: 500;
 }
 
-.view-project-btn {
+.button-row {
+  display: flex;
+  gap: 1rem;
+  margin-left: 2rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.view-project-btn,
+.video-demo-btn {
   display: block;
-  margin-top: 20px;
-  padding: 15px 20px;
+  padding: 12px 20px;
   background-color: #ff008b;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-left: 2rem;
   font-weight: bold;
-  width: 75%;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-align: center;
+  flex: 1;
+  min-width: 140px;
+  margin: 0;
 }
 
-.view-project-btn:hover {
+.view-project-btn:hover,
+.video-demo-btn:hover {
   background-color: #d60075;
+  opacity: 0.9;
 }
 
 .h2-title {
@@ -198,25 +209,7 @@ body {
   font-size: 1.1rem;
 }
 
-.video-demo-btn {
-  display: block;
-  margin-top: 1rem;
-  padding: 15px 20px;
-  background-color: #ff4d4d;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-left: 2rem;
-  font-weight: bold;
-  width: 75%;
-  font-size: 1.1rem;
-  text-align: center;
-}
 
-.video-demo-btn:hover {
-  background-color: #cc0000;
-}
 
 .detailed-content {
   margin-top: 3rem;
@@ -330,24 +323,17 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .video-demo-btn {
-    margin-right: -1px !important;
-    width: 290px !important;
-
+  .button-row {
+    flex-direction: column;
+    margin-left: 0;
+    align-items: center;
   }
 
-  .style-project {
-    display: block;
-    margin: 20px auto;
-    padding: 15px 20px 12px 26px;
-    background-color: rgb(255 0 139);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
+  .view-project-btn,
+  .video-demo-btn {
     width: 90%;
-    max-width: 200px;
+    margin: 5px 0;
+    max-width: none;
   }
 
   .tech-stack {

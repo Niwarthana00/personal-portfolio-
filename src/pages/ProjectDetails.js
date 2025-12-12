@@ -501,21 +501,20 @@ const ProjectDetails = () => {
             )}
           </div>
 
-          <DownloadButton projectId={project.id} />
-
-          {project.liveLink && (
-            <button
-              className="view-project-btn"
-              style={{ marginTop: '1rem', backgroundColor: '#007bff' }}
-              onClick={() => window.open(project.liveLink, '_blank')}
-            >
-              Visit Live Site
-            </button>
-          )}
-
-          {project.category !== 'UI/UX' && (
-            <VideoDemo projectId={project.id} />
-          )}
+          <div className="button-row">
+            <DownloadButton projectId={project.id} />
+            {project.liveLink && (
+              <button
+                className="view-project-btn"
+                onClick={() => window.open(project.liveLink, '_blank')}
+              >
+                Visit Live Site
+              </button>
+            )}
+            {project.category !== 'UI/UX' && (
+              <VideoDemo projectId={project.id} />
+            )}
+          </div>
         </div>
 
       </div>
