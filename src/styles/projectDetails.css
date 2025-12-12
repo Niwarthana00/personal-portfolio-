@@ -315,33 +315,105 @@ body {
 }
 
 @media (max-width: 768px) {
+  .project-details-container {
+    padding: 1rem;
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
+  }
+
   .main-content {
     flex-direction: column;
+    gap: 1rem;
   }
 
   .thumbnails {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 in a row */
+    gap: 0.5rem;
+  }
+
+  .thumbnail {
+    height: 60px;
+    /* Smaller height for mobile */
   }
 
   .button-row {
     flex-direction: column;
     margin-left: 0;
     align-items: center;
+    width: 100%;
   }
 
   .view-project-btn,
   .video-demo-btn {
-    width: 90%;
+    width: 100%;
+    /* Full width on mobile */
     margin: 5px 0;
     max-width: none;
+    padding: 12px 10px;
   }
 
   .tech-stack {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
+    /* Align left or center depending on preference, center usually better for mobile if stack is small */
+    gap: 1.5rem;
+    margin-left: 0;
   }
 
   .project-logo {
     display: none;
+    /* Hide logo on mobile as requested or typical */
+  }
+
+  /* Resetting margins for mobile */
+  .p-frontend,
+  .p-over,
+  .feature-p,
+  .title-over,
+  .title-stack,
+  .p-backend,
+  .h2-title,
+  .ul-class,
+  .main-features ul,
+  .logo-container {
+    margin-left: 0 !important;
+    text-align: justify;
+    padding-right: 17px;
+  }
+
+  .ul-class,
+  .main-features ul {
+    list-style-position: outside;
+    margin-left: 1.5rem !important;
+    padding-left: 0;
+  }
+
+  .ul-class li,
+  .main-features ul li {
+    padding-left: 5px;
+  }
+
+  .project-overview,
+  .features {
+    padding: 1.5rem;
+    width: auto;
+  }
+
+  .info-section {
+    padding: 0;
+  }
+
+  .logo-container {
+    margin-top: 2rem;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 28px;
+    margin-top: 10px;
+    text-align: center;
   }
 }
