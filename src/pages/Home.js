@@ -2,6 +2,7 @@
 import React from 'react';
 import NavBar from '../components/NavBar'; // Adjust this path if needed
 import '../styles/Home.css';
+import cvPdf from '../img/cvmy.pdf';
 import { useAnimatedRoles } from '../script/Animation.js';
 import Services from './Services'; // Import Services from the pages folder
 import Projects from './Projects.js';
@@ -21,44 +22,44 @@ export default function Home() {
           <h3>
             And I'm a <span className="animated-role"></span>
           </h3>
-          <button 
-            className="hire-button" 
-            onClick={() => window.open('https://drive.google.com/file/d/1sf-O4p5taKvgaKzW2FehUzGZbDh4AoOn/view?usp=sharing', '_blank')}
+          <button
+            className="hire-button"
+            onClick={() => window.open(cvPdf, '_blank')}
           >
             Hire Me
           </button>
-                    <div className="social-icons">
-                    <div className="social-media-links">
-            <a 
-              href="https://web.facebook.com/nivarthana.sathayanjali/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-facebook"></i>
-            </a>
-           
-            <a 
-              href="https://www.linkedin.com/in/niwarthana-sathyanjali-822323273/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-linkedin"></i>
-            </a>
-            <a 
-            href="mailto: sathyanjali00@gmail.com" 
-            target="_blank" 
-            rel="noopener noreferrer"
-          >
-            <i className="fas fa-envelope"></i>
-          </a>
-          <a 
-            href="https://github.com/Niwarthana00" 
-            target="_blank" 
-            rel="noopener noreferrer"
-          >
-            <i className="fab fa-github"></i>
-          </a>
-          </div>
+          <div className="social-icons">
+            <div className="social-media-links">
+              <a
+                href="https://web.facebook.com/nivarthana.sathayanjali/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-facebook"></i>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/niwarthana-sathyanjali-822323273/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="mailto: sathyanjali00@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fas fa-envelope"></i>
+              </a>
+              <a
+                href="https://github.com/Niwarthana00"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-github"></i>
+              </a>
+            </div>
 
           </div>
         </div>
@@ -67,9 +68,9 @@ export default function Home() {
         </div>
       </div>
       <Services />
-      <Projects/>
-      <Contactus/>
-      <Footer/>
+      <Projects />
+      <Contactus />
+      <Footer />
     </div>
   );
 }

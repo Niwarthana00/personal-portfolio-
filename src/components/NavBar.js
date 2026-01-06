@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import '../styles/NavBar.css';
+import cvPdf from '../img/cvmy.pdf';
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,7 +13,7 @@ export default function NavBar() {
   };
 
   const handleDownloadCV = () => {
-    window.open('https://drive.google.com/file/d/1sf-O4p5taKvgaKzW2FehUzGZbDh4AoOn/view?usp=sharing', '_blank');
+    window.open(cvPdf, '_blank');
   };
 
   const scrollToTop = () => {
@@ -85,7 +86,7 @@ export default function NavBar() {
           <li><a href="#about" onClick={(e) => handleNavigation(e, '#about')}>Services</a></li>
           <li><a href="#projects" onClick={(e) => handleNavigation(e, '#projects')}>Projects</a></li>
           <li><a href="#contact" onClick={(e) => handleNavigation(e, '#contact')}>Contact Us</a></li>
-          
+
         </ul>
 
         <button
