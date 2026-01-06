@@ -214,6 +214,18 @@ const ProjectFeatures = ({ project }) => {
             </div>
           </>
         );
+      case 14: // AI-Powered Text Summarizer System
+        return (
+          <>
+            <div>
+              <ul className="ul-class">
+                {Array.isArray(project.features.keyFeatures) && project.features.keyFeatures.map((feature, index) => (
+                  <li key={index}>{feature}</li>
+                ))}
+              </ul>
+            </div>
+          </>
+        );
       case 13: // Sahana - Disaster Relief Coordination Platform
         return (
           <>
@@ -288,6 +300,8 @@ const ProjectFeatures = ({ project }) => {
         return "The Online Seat Reservation System provides a comprehensive booking experience with the following key features:";
       case 13:
         return "Sahana provides a comprehensive set of features for disaster relief coordination, including:";
+      case 14:
+        return "The AI-Powered Text Summarizer System offers advanced capabilities for condensing content efficiently:";
       default:
         return "Features for this project are not available.";
     }

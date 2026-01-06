@@ -435,6 +435,35 @@ const projectData = [
     },
     link: 'https://github.com/Niwarthana00/flooding-Relief-app',
   },
+  {
+    id: 14,
+    category: 'Web Application',
+    title: 'AI-Powered Text Summarizer System',
+    mainImage: require('../img/AI-summery/main.png'),
+    thumbnails: [
+      require('../img/AI-summery/1.png'),
+      require('../img/AI-summery/2.png'),
+      require('../img/AI-summery/3.png'),
+      require('../img/AI-summery/4.png'),
+    ],
+    technologies: ['Python', 'PyTorch', 'ML'],
+    overview:
+      'An intelligent web application designed to instantly condense long-form content into concise, meaningful summaries. Powered by Google\'s T5 Transformer model using fine-tuned NLP techniques, this system helps users digest articles, research papers, and documents efficiently. The application features a modern, responsive interface capable of processing text, web URLs, and PDF documents in real-time.',
+    techStack: {
+      frontend: 'Streamlit for a professional, responsive user experience',
+      backend: ['Python', 'PyTorch', 'Hugging Face Transformers', 'BeautifulSoup', 'PyPDF'],
+    },
+    features: {
+      keyFeatures: [
+        'Advanced NLP Engine: Utilizes the T5-small model fine-tuned on the CNN/DailyMail dataset for high-accuracy abstractive summarization.',
+        'URL Intelligence: Integrated web scraper (BeautifulSoup) to fetch and summarize live articles from news websites.',
+        'Document Parsing: Built-in PDF reader (PyPDF) to extract and analyze uploaded documents seamlessly.',
+        'Custom Control: Interactive sliders for adjusting minimum and maximum summary lengths.',
+        'Smart Constraints: Implements Beam Search decoding with consistency checks to prevent hallucinations and errors.',
+      ],
+    },
+    link: 'https://github.com/Niwarthana00/tex-summery-AI',
+  },
 ];
 
 const ProjectDetails = () => {
@@ -490,7 +519,7 @@ const ProjectDetails = () => {
               <>
                 <h2 className="h2-title">Main Features:</h2>
                 <ul>
-                  {project.id === 11 || project.id === 12
+                  {project.id === 11 || project.id === 12 || project.id === 14
                     ? project.features.keyFeatures.map((feature, index) => (
                       <li key={index}>{feature.split(':')[0]}</li>
                     ))

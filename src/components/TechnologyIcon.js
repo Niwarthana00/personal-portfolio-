@@ -22,6 +22,11 @@ export const technologyIcons = {
   'CSS': require('../img/blockchain/CSS.png'),
   'Dart': 'https://upload.wikimedia.org/wikipedia/commons/7/7e/Dart-logo.png',
   'Node.js': require('../img/sahana/nodejs.png'),
+  'PyTorch': require('../img/AI-summery/pytorch-logo.png'),
+  'Hugging Face': require('../img/AI-summery/ml.png'),
+  'Streamlit': require('../img/AI-summery/ml.png'),
+  'Machine Learning': require('../img/AI-summery/ml.png'),
+  'ML': require('../img/AI-summery/ml.png'),
 };
 
 const TechnologyIcon = ({ name }) => {

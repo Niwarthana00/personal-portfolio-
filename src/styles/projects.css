@@ -106,7 +106,8 @@ p {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 0.3s ease;
-  width: calc(25% - 20px);
+  width: calc(33.333% - 20px);
+  max-width: 300px;
   text-align: left;
   opacity: 0;
   transform: translateY(30px);

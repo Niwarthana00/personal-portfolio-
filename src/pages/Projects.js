@@ -4,6 +4,7 @@ import '../styles/projects.css';
 import blockchainImage from '../img/blockchain/main.png';
 import seatbookImage from '../img/seatbook/main.png';
 import sahanaImage from '../img/sahana/mainimg.png';
+import aiSummeryImage from '../img/AI-summery/main.png';
 
 const projectData = [
   {
@@ -127,6 +128,15 @@ const projectData = [
     link: 'https://github.com/Niwarthana00/flooding-Relief-app',
     technologies: ['Flutter', 'Firebase', 'Dart', 'Agora RTC'],
     features: ['Real-time coordination', 'GPS-based aid requests', 'Voice Calling (Agora)']
+  },
+  {
+    id: 14,
+    category: 'Web application',
+    title: 'AI-Powered Text Summarizer System',
+    image: aiSummeryImage,
+    link: 'https://github.com/Niwarthana00/tex-summery-AI',
+    technologies: ['Python', 'PyTorch', 'ML'],
+    features: ['T5 Transformer Model', 'URL Summarization', 'Document Parsing']
   }
 
 ];
