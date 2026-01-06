@@ -8,12 +8,12 @@ export default function Services() {
       <div className="services-container" id="about">
         <h2 className="services-title">Services</h2>
         <p className="services-description">
-        I specialize in delivering high-quality solutions, including UI/UX design to create intuitive interfaces, 
-        mobile app development for iOS and Android, responsive web design and development to enhance your online presence, 
-        and robust desktop application development to streamline your business processes.        </p>
+          I specialize in delivering high-quality solutions, including UI/UX design to create intuitive interfaces,
+          mobile app development for iOS and Android, responsive web design and development to enhance your online presence,
+          and robust desktop application development to streamline your business processes.        </p>
         <div className="services-cards">
           <div className="service-card">
-            <i className="icon fas fa-mobile-alt"></i>        
+            <i className="icon fas fa-mobile-alt"></i>
             <h3>App Design</h3>
             <p>Building powerful, user-friendly mobile applications for iOS and Android platforms.</p>
           </div>
@@ -32,6 +32,11 @@ export default function Services() {
             <h3>Database</h3>
             <p>Designing and implementing efficient database systems using MongoDB, Firebase, and MySQL to support your application’s data needs.
               .</p>
+          </div>
+          <div className="service-card">
+            <i className="icon fas fa-brain"></i>
+            <h3>AI & Machine Learning</h3>
+            <p>Developing intelligent solutions using advanced machine learning models and neural networks to solve complex problems.</p>
           </div>
         </div>
       </div>
@@ -102,8 +107,8 @@ export default function Services() {
           <div className="skill-card">
             <img src="https://icon.icepanel.io/Technology/svg/MongoDB.svg" alt="Python" />
             <p>MongoDB</p>
-          </div> 
-          
+          </div>
+
         </div>
       </div>
     </div>
