@@ -131,7 +131,7 @@ const projectData = [
   },
   {
     id: 14,
-    category: 'Web application',
+    category: 'AI & Machine Learning',
     title: 'AI-Powered Text Summarizer System',
     image: aiSummeryImage,
     link: 'https://github.com/Niwarthana00/tex-summery-AI',
@@ -171,6 +171,7 @@ const Projects = () => {
     { full: 'Web application', short: 'Web' },
     { full: 'Desktop application', short: 'Desktop' },
     { full: 'UI/UX Design', short: 'UI/UX' },
+    { full: 'AI & Machine Learning', short: 'AI & ML' },
   ];
 
   return (

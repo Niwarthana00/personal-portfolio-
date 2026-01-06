@@ -437,7 +437,7 @@ const projectData = [
   },
   {
     id: 14,
-    category: 'Web Application',
+    category: 'AI & Machine Learning',
     title: 'AI-Powered Text Summarizer System',
     mainImage: require('../img/AI-summery/main.png'),
     thumbnails: [
