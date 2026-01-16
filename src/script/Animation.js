@@ -1,7 +1,7 @@
 // src/components/Animation.js
 import { useEffect } from 'react';
 
-const roles = ["Software Engineer", "Frontend Developer", "Backend Developer"];
+const roles = ["Data Scientist", "Machine Learning Engineer", "Software Engineer", "Frontend Developer", "Backend Developer"];
 
 export const useAnimatedRoles = () => {
   useEffect(() => {

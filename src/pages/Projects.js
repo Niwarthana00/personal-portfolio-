@@ -8,6 +8,15 @@ import aiSummeryImage from '../img/AI-summery/main.png';
 
 const projectData = [
   {
+    id: 14,
+    category: 'AI & Machine Learning',
+    title: 'AI-Powered Text Summarizer System',
+    image: aiSummeryImage,
+    link: 'https://github.com/Niwarthana00/tex-summery-AI',
+    technologies: ['Python', 'PyTorch', 'ML'],
+    features: ['T5 Transformer Model', 'URL Summarization', 'Document Parsing']
+  },
+  {
     id: 1,
     category: 'Mobile application',
     title: 'School Service Bus Notification App',
@@ -128,17 +137,7 @@ const projectData = [
     link: 'https://github.com/Niwarthana00/flooding-Relief-app',
     technologies: ['Flutter', 'Firebase', 'Dart', 'Agora RTC'],
     features: ['Real-time coordination', 'GPS-based aid requests', 'Voice Calling (Agora)']
-  },
-  {
-    id: 14,
-    category: 'AI & Machine Learning',
-    title: 'AI-Powered Text Summarizer System',
-    image: aiSummeryImage,
-    link: 'https://github.com/Niwarthana00/tex-summery-AI',
-    technologies: ['Python', 'PyTorch', 'ML'],
-    features: ['T5 Transformer Model', 'URL Summarization', 'Document Parsing']
   }
-
 ];
 
 const Projects = () => {
@@ -167,18 +166,18 @@ const Projects = () => {
 
   const categories = [
     { full: 'All', short: 'All' },
+    { full: 'AI & Machine Learning', short: 'AI & ML' },
     { full: 'Mobile application', short: 'Mobile' },
     { full: 'Web application', short: 'Web' },
     { full: 'Desktop application', short: 'Desktop' },
     { full: 'UI/UX Design', short: 'UI/UX' },
-    { full: 'AI & Machine Learning', short: 'AI & ML' },
   ];
 
   return (
     <div className="projects-container" id="projects">
       <h2>My Projects</h2>
       <p>
-        The projects listed below are ones I've worked on. You can get an idea of my projects categorized under Web, App, UI/UX, and Desktop.
+        The projects listed below are ones I've worked on. You can get an idea of my projects categorized under AI & ML, Web, App, UI/UX, and Desktop.
       </p>
 
       <div className="tab-menu">

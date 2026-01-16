@@ -8,10 +8,14 @@ export default function Services() {
       <div className="services-container" id="about">
         <h2 className="services-title">Services</h2>
         <p className="services-description">
-          I specialize in delivering high-quality solutions, including UI/UX design to create intuitive interfaces,
-          mobile app development for iOS and Android, responsive web design and development to enhance your online presence,
-          and robust desktop application development to streamline your business processes.        </p>
+          I specialize in delivering high-quality solutions, including <strong>AI-powered systems</strong> and <strong>Data Science</strong> to drive intelligent decision-making. My expertise also covers UI/UX design, mobile app development, responsive web design, and robust desktop applications to streamline your business processes.
+        </p>
         <div className="services-cards">
+          <div className="service-card">
+            <i className="icon fas fa-brain"></i>
+            <h3>AI & Machine Learning</h3>
+            <p>Developing intelligent solutions using advanced machine learning models, neural networks, and data analytics to solve complex problems.</p>
+          </div>
           <div className="service-card">
             <i className="icon fas fa-mobile-alt"></i>
             <h3>App Design</h3>
@@ -30,13 +34,7 @@ export default function Services() {
           <div className="service-card">
             <i className="icon fas fa-database"></i>
             <h3>Database</h3>
-            <p>Designing and implementing efficient database systems using MongoDB, Firebase, and MySQL to support your application’s data needs.
-              .</p>
-          </div>
-          <div className="service-card">
-            <i className="icon fas fa-brain"></i>
-            <h3>AI & Machine Learning</h3>
-            <p>Developing intelligent solutions using advanced machine learning models and neural networks to solve complex problems.</p>
+            <p>Designing and implementing efficient database systems using MongoDB, Firebase, and MySQL to support your application’s data needs.</p>
           </div>
         </div>
       </div>
