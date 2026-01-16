@@ -105,8 +105,12 @@ export default function Services() {
             <p>Node js</p>
           </div>
           <div className="skill-card">
-            <img src="https://icon.icepanel.io/Technology/svg/MongoDB.svg" alt="Python" />
+            <img src="https://icon.icepanel.io/Technology/svg/MongoDB.svg" alt="MongoDB" />
             <p>MongoDB</p>
+          </div>
+          <div className="skill-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg" alt="Machine Learning" />
+            <p>Machine Learning</p>
           </div>
 
         </div>
