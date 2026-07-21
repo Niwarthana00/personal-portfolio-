@@ -25,7 +25,7 @@ export default function HomeSection() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className={styles.description}
         >
-          Specializing in building scalable backend infrastructures, real-time web applications, and intuitive mobile solutions. Focused on writing clean, maintainable code and delivering high-performance software engineering solutions.
+          Specializing in data science, real-time web applications, and intuitive mobile solutions. Focused on writing clean, maintainable code and delivering high-performance software engineering solutions.
         </motion.p>
 
         {/* Call-to-action & Socials */}
