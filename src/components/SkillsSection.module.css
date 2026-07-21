@@ -1,5 +1,5 @@
 .skills {
-  padding: 5rem 0;
+  padding: 2.5rem 0;
 }
 
 .card {
@@ -57,7 +57,7 @@
 
 @media (max-width: 768px) {
   .skills {
-    padding: 3rem 0;
+    padding: 1.5rem 0;
   }
   .card {
     padding: 1.25rem 1rem;

@@ -1,9 +1,9 @@
 .hero {
-  padding: 4rem 0 2.5rem 0;
+  padding: 3rem 0 1rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 75vh;
+  min-height: auto; /* Removed 75vh to reduce gap to next section */
 }
 
 .intro {
@@ -37,7 +37,7 @@
   color: var(--heading);
   line-height: 1.25;
   font-weight: 700;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.5rem; /* Significantly reduced gap */
   letter-spacing: -0.02em;
 }
 
@@ -48,9 +48,9 @@
 .description {
   font-size: 1.05rem;
   color: var(--muted-text);
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem; /* Significantly reduced gap */
   line-height: 1.7;
-  max-width: 680px;
+  max-width: 850px; /* Increased from 680px for better balance */
   font-weight: 400;
 }
 
@@ -59,7 +59,7 @@
   gap: 1.25rem;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 3.5rem;
+  margin-bottom: 1rem; /* Significantly reduced gap */
 }
 
 .socials {
@@ -115,14 +115,20 @@
     min-height: auto;
   }
   .headline {
-    font-size: 2.25rem;
+    font-size: 1.8rem; /* Reduced from 2.25rem so it fits on 2 lines ideally */
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.5rem; /* Reduced gap */
   }
   .description {
     font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem; /* Reduced gap */
+    text-align: justify; /* Helps with readability on small screens if preferred, or keep left aligned */
   }
   .actions {
     gap: 1rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
   }
   .statsGrid {
     gap: 1.25rem;

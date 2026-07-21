@@ -1,5 +1,5 @@
 .about {
-  padding: 5rem 0;
+  padding: 2.5rem 0;
 }
 
 .content {
@@ -105,6 +105,6 @@
 
 @media (max-width: 768px) {
   .about {
-    padding: 3rem 0;
+    padding: 1.5rem 0;
   }
 }

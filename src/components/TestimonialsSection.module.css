@@ -1,5 +1,5 @@
 .testimonials {
-  padding: 5rem 0;
+  padding: 2.5rem 0;
 }
 
 .header {
@@ -31,7 +31,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Reduced slightly to allow 3 cards per row */
   gap: 1.25rem;
 }
 
@@ -208,7 +208,7 @@
 
 @media (max-width: 768px) {
   .testimonials {
-    padding: 3rem 0;
+    padding: 1.5rem 0;
   }
   .grid {
     grid-template-columns: 1fr;

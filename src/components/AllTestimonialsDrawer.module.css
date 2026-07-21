@@ -46,8 +46,8 @@
 }
 
 .drawerContent {
-    padding: 3rem 10vw; 
-    max-width: 1400px;
+    padding: 2.5rem 6rem; 
+    max-width: 1292px;
     margin: 0 auto;
     width: 100%;
 }
@@ -131,7 +131,7 @@
     }
 
     .drawerContent {
-        padding: 2rem 5vw;
+        padding: 5rem 1rem 2rem 1rem;
     }
 
     .grid {

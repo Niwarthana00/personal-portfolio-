@@ -11,7 +11,7 @@
   --muted-text: #8b949e;
   --font-sans: var(--font-inter), 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
-  --sidebar-width: 240px;
+  --sidebar-width: 280px; /* Increased from 240px */
 }
 
 * {
@@ -39,15 +39,32 @@ body {
 .main-content {
   flex: 1;
   margin-left: var(--sidebar-width);
-  padding: 3rem 4rem;
+  padding: 2.5rem 6rem; /* Doubled the gap to the sidebar as requested */
   overflow-y: auto;
+  overflow-x: hidden; /* Prevent horizontal scroll from full-width dividers */
   min-height: 100vh;
 }
 
 /* Container constraints for main sections */
 .section-container {
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 1100px; /* Increased from 900px to balance the right side */
+  margin: 0 auto; /* Centered content */
+}
+
+/* Full-width section dividers */
+.section-container > section {
+  position: relative;
+}
+
+.section-container > section:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -50vw;
+  width: 200vw;
+  height: 1px;
+  background-color: var(--border-color);
+  z-index: 1;
 }
 
 /* Base styles for headings */
@@ -64,7 +81,6 @@ h6 {
 
 h2.section-title {
   font-size: 2rem;
-  border-bottom: 1px solid var(--border-color);
   padding-bottom: 0.5rem;
   margin-top: 1.5rem;
   margin-bottom: 2rem;
@@ -177,7 +193,7 @@ a:hover {
 /* Responsive designs */
 @media (max-width: 992px) {
   .main-content {
-    padding: 2.5rem 2rem;
+    padding: 2.5rem 1.5rem;
   }
 }
 
@@ -188,7 +204,7 @@ a:hover {
 
   .main-content {
     margin-left: 0;
-    padding: 5rem 1.5rem 2rem 1.5rem;
+    padding: 5rem 1rem 2rem 1rem; /* Reduced horizontal padding for mobile */
     /* Space for sticky mobile header */
     min-height: calc(100vh - 60px);
   }

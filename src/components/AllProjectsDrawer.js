@@ -57,11 +57,6 @@ export default function AllProjectsDrawer({ isOpen, onClose, onProjectSelect }) 
                     exit={{ x: '100%' }}
                     transition={{ type: 'spring', damping: 25, stiffness: 200 }}
                     onClick={(e) => e.stopPropagation()}
-                >
-                    <button className={styles.closeBtn} onClick={onClose} aria-label="Close">
-                        <FiX />
-                    </button>
-
                     <div className={styles.drawerContent}>
                         <div className={styles.topNav}>
                             <button onClick={onClose} className={styles.backBtn}>

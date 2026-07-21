@@ -1,5 +1,5 @@
 .projects {
-  padding: 5rem 0;
+  padding: 2.5rem 0;
 }
 
 .header {
@@ -161,7 +161,7 @@
 
 @media (max-width: 768px) {
   .projects {
-    padding: 3rem 0;
+    padding: 1.5rem 0;
   }
   .grid {
     grid-template-columns: 1fr;

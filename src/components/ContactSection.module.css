@@ -1,5 +1,5 @@
 .contact {
-  padding: 5rem 0;
+  padding: 2.5rem 0;
 }
 
 .intro {
@@ -110,7 +110,7 @@
 
 @media (max-width: 768px) {
   .contact {
-    padding: 3rem 0;
+    padding: 1.5rem 0;
   }
   .grid {
     grid-template-columns: 1fr;
