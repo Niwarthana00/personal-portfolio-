@@ -3,7 +3,8 @@
   --secondary-bg: #161b22;
   --foreground: #c9d1d9;
   --heading: #ffffff;
-  --primary: #E0234E; /* Custom red-pink accent */
+  --primary: #E0234E;
+  /* Custom red-pink accent */
   --primary-hover: #f23d66;
   --primary-glow: rgba(224, 35, 78, 0.15);
   --border-color: #30363d;
@@ -50,7 +51,12 @@ body {
 }
 
 /* Base styles for headings */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--heading);
   font-weight: 600;
   line-height: 1.25;
@@ -179,12 +185,16 @@ a:hover {
   .app-container {
     flex-direction: column;
   }
+
   .main-content {
     margin-left: 0;
-    padding: 5rem 1.5rem 2rem 1.5rem; /* Space for sticky mobile header */
+    padding: 5rem 1.5rem 2rem 1.5rem;
+    /* Space for sticky mobile header */
     min-height: calc(100vh - 60px);
   }
+
   h2.section-title {
     font-size: 1.75rem;
   }
 }
+/* force redeploy for Next.js */
