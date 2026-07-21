@@ -149,6 +149,12 @@
     gap: 1rem;
     margin-bottom: 1.5rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+}
+
+.tabsNav::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
 }
 
 .tabBtn {
@@ -161,6 +167,7 @@
     cursor: pointer;
     transition: all 0.3s;
     position: relative;
+    white-space: nowrap; /* Prevent "Tech stack" from breaking into two lines on mobile */
 }
 
 .tabBtn:hover {
