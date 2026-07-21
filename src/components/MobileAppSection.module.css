@@ -1,0 +1,211 @@
+.section {
+  padding: 5rem 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.appTitle {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--heading);
+}
+
+.appSubtitle {
+  color: var(--primary);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.desc {
+  font-size: 1rem;
+  color: var(--muted-text);
+  line-height: 1.6;
+}
+
+.featuresList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.checkIcon {
+  color: var(--primary);
+  margin-top: 0.25rem;
+  flex-shrink: 0;
+}
+
+.techStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.btnArea {
+  margin-top: 1rem;
+}
+
+/* Device Mockup */
+.mockupArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  perspective: 1000px;
+}
+
+.phoneMockup {
+  width: 250px;
+  height: 500px;
+  background-color: #000000;
+  border: 10px solid #1f2328;
+  border-radius: 36px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7),
+              0 0 30px rgba(255, 106, 193, 0.15);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Speaker Notch */
+.notch {
+  width: 110px;
+  height: 18px;
+  background-color: #1f2328;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notchCamera {
+  width: 6px;
+  height: 6px;
+  background-color: #0d1117;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.notchSpeaker {
+  width: 30px;
+  height: 3px;
+  background-color: #30363d;
+  border-radius: 2px;
+}
+
+/* Screenshot Content inside Mockup */
+.screenContent {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #161b22;
+}
+
+.slideImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* Slider Controls */
+.controls {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  z-index: 15;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.35);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.2s ease;
+}
+
+.activeDot {
+  background-color: var(--primary);
+  transform: scale(1.25);
+  box-shadow: 0 0 8px var(--primary);
+}
+
+.navBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 15;
+  transition: all 0.2s ease;
+}
+
+.navBtn:hover {
+  background-color: var(--primary);
+  color: #0d1117;
+  border-color: var(--primary);
+}
+
+.prevBtn {
+  left: 10px;
+}
+
+.nextBtn {
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 0;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .mockupArea {
+    order: -1;
+  }
+}

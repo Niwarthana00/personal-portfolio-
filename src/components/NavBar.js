@@ -1,101 +1,69 @@
-import React, { useState, useEffect } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
-import '../styles/NavBar.css';
-import cvPdf from '../img/cvmy.pdf';
+'use client';
+
+import { useState, useEffect } from 'react';
+import Link from 'next/link';
+import { motion, AnimatePresence } from 'framer-motion';
+import { FiMenu, FiX } from 'react-icons/fi';
+import styles from './NavBar.module.css';
+
+const navLinks = [
+    { name: 'Home', href: '/' },
+    { name: 'Services', href: '#services' },
+    { name: 'Projects', href: '#projects' },
+    { name: 'Contact', href: '#contact' },
+];
 
 export default function NavBar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const location = useLocation();
-  const navigate = useNavigate();
+    const [isOpen, setIsOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 50);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
-  const handleDownloadCV = () => {
-    window.open(cvPdf, '_blank');
-  };
+    return (
+        <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
+            <div className={`container ${styles.navContainer}`}>
+                <Link href="/" className={styles.logo}>
+                    Niwarthana<span className={styles.dot}>.</span>
+                </Link>
+                <div className={styles.desktopMenu}>
+                    {navLinks.map((link) => (
+                        <Link key={link.name} href={link.href} className={styles.navLink}>
+                            {link.name}
+                        </Link>
+                    ))}
+                </div>
+                <button className={styles.menuBtn} onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
+                    {isOpen ? <FiX /> : <FiMenu />}
+                </button>
+            </div>
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  const handleNavigation = (e, path) => {
-    e.preventDefault();
-
-    if (path === '/' || path === 'top') {
-      if (location.pathname !== '/') {
-        navigate('/');
-      } else {
-        scrollToTop();
-      }
-    } else {
-      const sectionId = path.replace('#', '');
-      if (location.pathname !== '/') {
-        navigate('/');
-        setTimeout(() => {
-          scrollToSection(sectionId);
-        }, 100);
-      } else {
-        scrollToSection(sectionId);
-      }
-    }
-
-    setIsMenuOpen(false);
-  };
-
-  const handleLogoClick = (e) => {
-    e.preventDefault();
-    handleNavigation(e, 'top');
-  };
-
-  useEffect(() => {
-    if (location.pathname === '/' && location.hash) {
-      const sectionId = location.hash.replace('#', '');
-      setTimeout(() => {
-        scrollToSection(sectionId);
-      }, 100);
-    }
-  }, [location]);
-
-  return (
-    <nav className="navbar">
-      <div className="navbar-container">
-        <div className="logo">
-          <a href="/" onClick={handleLogoClick}>Niwarthana</a>
-        </div>
-
-        <div
-          className={`menu-toggle ${isMenuOpen ? 'active' : ''}`}
-          onClick={toggleMenu}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-
-        <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-          <li><a href="/" onClick={(e) => handleNavigation(e, 'top')}>Home</a></li>
-          <li><a href="#about" onClick={(e) => handleNavigation(e, '#about')}>Services</a></li>
-          <li><a href="#projects" onClick={(e) => handleNavigation(e, '#projects')}>Projects</a></li>
-          <li><a href="#contact" onClick={(e) => handleNavigation(e, '#contact')}>Contact Us</a></li>
-
-        </ul>
-
-        <button
-          className="cv-button desktop-cv-button"
-          onClick={handleDownloadCV}
-        >
-          Download CV
-        </button>
-      </div>
-    </nav>
-  );
+            <AnimatePresence>
+                {isOpen && (
+                    <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: 'auto' }}
+                        exit={{ opacity: 0, height: 0 }}
+                        className={styles.mobileMenu}
+                    >
+                        {navLinks.map((link) => (
+                            <Link
+                                key={link.name}
+                                href={link.href}
+                                onClick={() => setIsOpen(false)}
+                                className={styles.mobileLink}
+                            >
+                                {link.name}
+                            </Link>
+                        ))}
+                    </motion.div>
+                )}
+            </AnimatePresence>
+        </nav>
+    );
 }

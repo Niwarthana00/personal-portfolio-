@@ -1,0 +1,133 @@
+.hero {
+  padding: 4rem 0 2.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 75vh;
+}
+
+.intro {
+  max-width: 800px;
+}
+
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.825rem;
+  font-weight: 500;
+  color: var(--muted-text);
+  background-color: var(--secondary-bg);
+  border: 1px solid var(--border-color);
+  padding: 0.4rem 0.85rem;
+  border-radius: 2em;
+  margin-bottom: 1.75rem;
+}
+
+.statusDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #10b981; /* Green dot */
+  box-shadow: 0 0 8px #10b981;
+}
+
+.headline {
+  font-size: 3rem;
+  color: var(--heading);
+  line-height: 1.25;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.accentDot {
+  color: var(--primary);
+}
+
+.description {
+  font-size: 1.05rem;
+  color: var(--muted-text);
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+  max-width: 680px;
+  font-weight: 400;
+}
+
+.actions {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 3.5rem;
+}
+
+.socials {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+
+.socialLink {
+  color: var(--muted-text);
+  font-size: 1.3rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.socialLink:hover {
+  color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.statsGrid {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  border-top: 1px solid var(--border-color);
+  padding-top: 2rem;
+  max-width: 600px;
+}
+
+.statCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.statNumber {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--heading);
+  line-height: 1.1;
+}
+
+.statLabel {
+  font-size: 0.8rem;
+  color: var(--muted-text);
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 2.5rem 0;
+    min-height: auto;
+  }
+  .headline {
+    font-size: 2.25rem;
+  }
+  .description {
+    font-size: 0.95rem;
+  }
+  .actions {
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+  }
+  .statsGrid {
+    gap: 1.25rem;
+  }
+  .statNumber {
+    font-size: 1.4rem;
+  }
+}

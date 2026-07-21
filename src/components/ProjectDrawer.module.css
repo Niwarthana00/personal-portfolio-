@@ -1,0 +1,370 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(1, 4, 9, 0.6); /* Reduced darkness */
+    backdrop-filter: blur(4px); /* Reduced blur */
+    z-index: 3000;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.drawer {
+    width: 100%;
+    max-width: 550px; /* Reduced from 650px */
+    height: 100%;
+    background: #0d1117;
+    border-left: 1px solid #30363d;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.closeBtn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(90deg);
+}
+
+.drawerContent {
+    padding: 3rem 2.5rem;
+}
+
+/* Header */
+.header {
+    margin-bottom: 2rem;
+}
+
+.titleText {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    background: linear-gradient(to right, #f8fafc, #94a3b8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    line-height: 1.2;
+    margin-top: 0.5rem;
+}
+
+.category {
+    color: var(--primary);
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+}
+
+/* Media Grid - Adjusted for Drawer */
+.mediaGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.mainImageWrapper {
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border: 1px solid rgba(110, 118, 129, 0.25);
+    background: #010409;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    width: 100%;
+}
+
+.mainImage {
+    width: 100%;
+    height: 100%;
+    max-height: 450px;
+    object-fit: contain;
+    display: block;
+    background: #0d1117;
+}
+
+.thumbnails {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+    width: 100%;
+}
+
+.thumbnail {
+    border-radius: 0.25rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    background: #010409;
+}
+
+.thumbnail.active {
+    border-color: var(--primary);
+}
+
+.thumbnail:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Tabs */
+.bottomSection {
+    background: rgba(3, 6, 15, 0.88);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.tabsNav {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tabBtn {
+    background: transparent;
+    border: none;
+    color: #8b949e;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.tabBtn:hover {
+    color: #c9d1d9;
+}
+
+.activeTab {
+    color: var(--primary);
+}
+
+.activeTab::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--primary);
+}
+
+.tabContent {
+    min-height: 200px;
+}
+
+.textContent {
+    animation: fadeIn 0.3s ease;
+}
+
+.text {
+    color: #c9d1d9;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Features */
+.featureList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.featureItem {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+    color: #cbd5e1;
+    font-size: 0.95rem;
+}
+
+.checkIcon {
+    color: var(--primary);
+    margin-top: 4px;
+    flex-shrink: 0;
+}
+
+/* Tech Stack */
+.detailedTech {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.techCategory {
+    margin-bottom: 0.5rem;
+}
+
+.techLabel {
+    display: block;
+    color: var(--secondary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    text-transform: uppercase;
+}
+
+.techValue {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.techList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    background: rgba(110, 118, 129, 0.15);
+    color: #58a6ff;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Action Buttons */
+.actionButtons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2.5rem;
+}
+
+.actionBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    background: transparent;
+    color: #c9d1d9;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: 1px solid rgba(110, 118, 129, 0.4);
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.actionBtn:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.disabledBtn {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* Modal */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContent {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+}
+
+.modalImage {
+    max-width: 100%;
+    max-height: 90vh;
+    border-radius: 0.5rem;
+    object-fit: contain;
+}
+
+.modalCloseBtn {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .drawer {
+        max-width: 100%;
+    }
+    
+    .drawerContent {
+        padding: 2rem 1.5rem;
+    }
+    
+    .thumbnails {
+        gap: 0.5rem;
+    }
+    
+    .thumbnail {
+        height: 60px;
+    }
+    
+    .bottomSection {
+        padding: 1.5rem;
+    }
+    
+    .modalCloseBtn {
+        top: 10px;
+        right: 10px;
+        background: rgba(0,0,0,0.5);
+        border-radius: 50%;
+    }
+}

@@ -1,65 +1,36 @@
-# Niwarthana's Personal Portfolio 🚀
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Welcome to my personal portfolio repository! This responsive website showcases my journey as a software engineer, highlighting my projects, technical skills, and professional experience.
+## Getting Started
 
-## 🌟 Overview
+First, run the development server:
 
-This portfolio is built using **React** to provide a seamless and interactive user experience. It features a modern design with a focus on usability and aesthetics across all devices.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## 🛠️ Technologies Used
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-*   **Frontend:** React.js, HTML5, CSS3, JavaScript (ES6+)
-*   **Routing:** React Router v6
-*   **Icons:** Lucide React, FontAwesome (via images)
-*   **Deployment:** GitHub Pages / Vercel (or relevant platform)
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-## 📂 Key Projects Featured
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-Here are some of the highlight projects available in the portfolio:
+## Learn More
 
-### 1. **Sahana - Disaster Relief Coordination App** 🤝
-A mobile application designed to bridge the gap between disaster victims and volunteers.
-*   **Tech Stack:** Flutter, Firebase, Agora RTC
-*   **Features:** Real-time coordination, GPS-based requests, Voice Calling.
+To learn more about Next.js, take a look at the following resources:
 
-### 2. **School Bus Notification System** 🚌
-A system to streamline communication between school bus drivers and parents.
-*   **Tech Stack:** Flutter, Firebase
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-### 3. **Chain Flow - Blockchain Supply Chain** ⛓️
-A blockchain-based system for transparent product tracking.
-*   **Tech Stack:** Python, HTML, CSS
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-*(And many more web, mobile, and desktop applications!)*
+## Deploy on Vercel
 
-## 🚀 Getting Started
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-To run this project locally, follow these steps:
-
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/Niwarthana00/personal-portfolio-.git
-    ```
-
-2.  **Navigate to the project directory:**
-    ```bash
-    cd personal-portfolio-
-    ```
-
-3.  **Install dependencies:**
-    ```bash
-    npm install
-    ```
-
-4.  **Start the development server:**
-    ```bash
-    npm start
-    ```
-    Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-## 🤝 Contact
-
-Feel free to reach out to me via the contact section in the portfolio or connect with me on [LinkedIn](https://www.linkedin.com/in/niwarthana-sathyanjali-822323273/).
-
----
-*Created by Niwarthana*
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
