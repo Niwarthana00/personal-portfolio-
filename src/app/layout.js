@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Niwarthana | Modern Portfolio",
+  title: "Niwarthana",
   description: "Personal portfolio of Niwarthana Sathyanjali - Software Engineer",
   icons: {
     icon: 'https://i.imgur.com/KKAb2wP.png',
