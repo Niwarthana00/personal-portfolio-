@@ -18,8 +18,8 @@ export default function ExperienceSection() {
       ]
     },
     {
-      role: 'Inter Software Engineer',
-      company: 'SLIA Institute',
+      role: 'Intern Software Engineer',
+      company: 'SLIA Institute', 
       period: 'May 2025 – Dec 2025',
       bullets: [
         'Built websites with JWT authentication using React.js and Node.js following RESTful API architecture.',
