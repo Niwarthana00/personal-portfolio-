@@ -33,12 +33,12 @@
 }
 
 .headline {
-  font-size: 3rem;
+  font-size: 2.3rem;
   color: var(--heading);
-  line-height: 1.25;
-  font-weight: 700;
+  line-height: 1.3;
+  font-weight: 600;
   margin-bottom: 0.5rem; /* Significantly reduced gap */
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 
 .accentDot {
@@ -115,8 +115,9 @@
     min-height: auto;
   }
   .headline {
-    font-size: 1.8rem; /* Reduced from 2.25rem so it fits on 2 lines ideally */
-    line-height: 1.25;
+    font-size: 1.55rem;
+    line-height: 1.3;
+    font-weight: 600;
     letter-spacing: -0.01em;
     margin-bottom: 0.5rem; /* Reduced gap */
   }
