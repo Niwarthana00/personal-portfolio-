@@ -7,7 +7,17 @@ import styles from './Projects.module.css';
 
 import { projectData } from '../data/projects';
 
-const categories = ['All', 'Mobile Application', 'Web Application', 'Desktop Application', 'UI/UX Design', 'AI & Machine Learning'];
+const rawCategories = [...new Set(projectData.map(p => p.category))];
+const categoryPriority = ['IoT & Full Stack System', 'Data Engineering', 'AI & ML'];
+const sortedCategories = rawCategories.sort((a, b) => {
+    const indexA = categoryPriority.indexOf(a);
+    const indexB = categoryPriority.indexOf(b);
+    if (indexA !== -1 && indexB !== -1) return indexA - indexB;
+    if (indexA !== -1) return -1;
+    if (indexB !== -1) return 1;
+    return a.localeCompare(b);
+});
+const categories = ['All', ...sortedCategories];
 
 export default function Projects() {
     const [filter, setFilter] = useState('All');

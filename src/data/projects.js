@@ -497,4 +497,107 @@ export const projectData = [
         link: 'https://github.com/Niwarthana00/ecommerce-dashboard',
         liveLink: 'https://datastudio.google.com/u/0/reporting/d2c821d0-df57-4a7a-a81e-e556de9d2b90/page/p_quvdiwvm1d',
     },
+    {
+        id: 16,
+        category: 'AI & ML',
+        title: 'Predicting Stellar Class (Stellar Object Classifier)',
+        mainImage: '/assets/stellar/main.png',
+        thumbnails: [
+            '/assets/stellar/3.png',
+            '/assets/stellar/4.png',
+            '/assets/stellar/5.png',
+        ],
+        technologies: ['Python', 'Streamlit', 'LightGBM', 'CatBoost', 'Hugging Face', 'SHAP'],
+        overview:
+            'An astrophysics machine learning system designed to classify astronomical celestial objects into Galaxies, Quasars (QSO), and Stars using SDSS photometric and astrometric data. Powered by a 10-fold cross-validated ensemble of LightGBM and CatBoost, the model delivers ~96% balanced accuracy and integrates SHAP explainability within an interactive real-time Streamlit dashboard.',
+        techStack: {
+            frontend: 'Streamlit with custom cosmic dark-themed UI for interactive real-time inference and XAI visualization',
+            backend: [
+                'Python',
+                'LightGBM & CatBoost (10-Fold Stratified Ensemble)',
+                'SHAP (Explainable AI)',
+                'Hugging Face Hub (Model hosting & caching)',
+                'Pandas & NumPy (53 Engineered Astrometric & Photometric Features)'
+            ],
+        },
+        features: {
+            keyFeatures: [
+                'Multi-Class Celestial Classification: Predicts celestial objects as Galaxy, Quasar (QSO), or Star with confidence probability scoring.',
+                'Astrophysical Feature Engineering: 53 engineered features including SDSS ugriz color indices, band ratios, statistics, and non-linear redshift indicators.',
+                'Production Ensemble Pipeline: 10-Fold Stratified Cross-Validation blend combining 85% LightGBM and 15% CatBoost achieving ~96% balanced accuracy.',
+                'Explainable AI (SHAP): Global feature importance and real-time local attribution waterfalls explaining the astrophysical drivers behind every prediction.',
+                'Production Inference Dashboard: Standalone interactive Streamlit application with random sample inspection and automated Hugging Face model caching.'
+            ],
+        },
+        link: 'https://github.com/Niwarthana00/predicting-stellar-class',
+    },
+    {
+        id: 17,
+        category: 'IoT & Full Stack System',
+        title: 'RapidRoute – Intelligent Public Transit & Fleet Management Ecosystem',
+        mainImage: '/assets/rapid-route/main.png',
+        thumbnails: [
+            '/assets/rapid-route/admin/dashboard-ui.png',
+            '/assets/rapid-route/passenger/2.png',
+            '/assets/rapid-route/driver/6.png',
+            '/assets/rapid-route/powerbi/Screenshot_1.png',
+            '/assets/rapid-route/architecture/data_pipeline_diagram.jpg',
+            '/assets/rapid-route/architecture/vision_detection_diagram.jpg',
+        ],
+        technologies: [
+            'React Native',
+            'ESP32 IoT',
+            'Kafka',
+            'TimescaleDB',
+            'Next.js',
+            'Python',
+            'Power BI',
+            'Debezium',
+            'Computer Vision',
+            'Docker',
+        ],
+        overview:
+            'RapidRoute is an enterprise-scale intelligent transit and fleet management ecosystem combining ESP32 IoT edge sensing, real-time event streaming, computer vision, and business intelligence. It bridges passengers, transit drivers, and fleet operators through synchronized React Native mobile apps, a centralized web administration portal, an automated camera-based seat occupancy detection pipeline, and Power BI operational analytics.',
+        techStack: {
+            frontend: 'Next.js & React (Fleet Admin Dashboard) + React Native & Expo (Passenger & Driver Cross-Platform Apps)',
+            backend: [
+                'ESP32 Microcontroller (Dual-core edge IoT telemetry & 10Hz GPS sensor streaming)',
+                'Apache Kafka & Zookeeper (High-throughput event streaming broker)',
+                'Debezium Connector (Zero-latency Change Data Capture - CDC)',
+                'TimescaleDB & PostgreSQL (Temporal telemetry & historical ride data storage)',
+                'Python, OpenCV & YOLO (Real-time bus seat occupancy vision pipeline)',
+                'Node.js & Express REST microservices for passenger and fleet state sync',
+                'Power BI (Transit business intelligence, delay analysis, and heatmaps)',
+                'Docker & Docker Compose (Containerized multi-service deployment)',
+            ],
+        },
+        features: {
+            passengerApp: [
+                'Real-Time Bus Tracking: Live GPS mapping showing buses moving in real time with dynamic route polylines.',
+                'AI Seat Availability: Real-time seat occupancy visualization (Empty, Reserved, Occupied) before boarding.',
+                'Smart ETA & Arrival Prediction: ML-assisted arrival times accounting for halts and traffic patterns.',
+                'Digital Bus Passes & Tickets: Frictionless booking, QR validation, and schedule search.',
+            ],
+            driverApp: [
+                'Telemetry & Location Streaming: Continuous background GPS beacon transmission directly to Kafka telemetry sinks.',
+                'Turn-by-Turn Route Navigation: Live route path, scheduled stop markers, and trip status controls (Start, Pause, Complete).',
+                'Passenger Count & Manifest: View live passenger boarding counts and halt pickups.',
+            ],
+            fleetAdminDashboard: [
+                'Centralized Fleet Control: Real-time map monitoring every active bus across multiple routes simultaneously.',
+                'Scheduling & Route Dispatching: Manage bus routes, stops, driver assignments, and automated timetable scheduling.',
+                'Incident & System Telemetry: Live monitoring of broker health, bus delay status, and telemetry streams.',
+            ],
+            powerBiAnalytics: [
+                'Passenger Volume Heatmaps: Peak-hour passenger flow analysis across routes, stations, and time of day.',
+                'Fleet Operational Efficiency: Punctuality tracking, idle time metrics, and trip turnaround times.',
+                'Predictive Demand Intelligence: Historical transit patterns and delay root-cause diagnostics.',
+            ],
+            aiAndDataPipelines: [
+                'Computer Vision Seat Detection: Deep learning model processing interior bus camera feeds to detect occupied vs empty seats automatically.',
+                'Event-Driven CDC Pipeline: Debezium captures transactional DB changes and streams them through Kafka topics to TimescaleDB with sub-second latency.',
+            ],
+        },
+        link: 'https://github.com/Niwarthana00/RapidRoute',
+    },
 ];

@@ -10,9 +10,13 @@ export default function AllProjectsDrawer({ isOpen, onClose, onProjectSelect }) 
     const [filter, setFilter] = useState('All');
 
     const rawCategories = [...new Set(projectData.map(project => project.category))];
+    const categoryPriority = ['IoT & Full Stack System', 'Data Engineering', 'AI & ML'];
     const sortedCategories = rawCategories.sort((a, b) => {
-        if (a === 'AI & ML') return -1;
-        if (b === 'AI & ML') return 1;
+        const indexA = categoryPriority.indexOf(a);
+        const indexB = categoryPriority.indexOf(b);
+        if (indexA !== -1 && indexB !== -1) return indexA - indexB;
+        if (indexA !== -1) return -1;
+        if (indexB !== -1) return 1;
         return a.localeCompare(b);
     });
     const categories = ['All', ...sortedCategories];

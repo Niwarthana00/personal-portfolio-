@@ -11,8 +11,8 @@ export default function ProjectsSection() {
   const [selectedProjectId, setSelectedProjectId] = useState(null);
   const [isAllProjectsOpen, setIsAllProjectsOpen] = useState(false);
   
-  // Show specific 3 projects on the home page
-  const targetIds = [15, 1, 11];
+  // Show specific 3 projects on the home page (RapidRoute, Ecommerce Pipeline, School Bus)
+  const targetIds = [17, 15, 1];
   const filteredProjects = targetIds.map(id => projectData.find(p => p.id === id)).filter(Boolean);
 
   const truncateText = (text, maxLength) => {

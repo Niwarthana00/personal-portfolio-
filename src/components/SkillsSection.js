@@ -8,27 +8,27 @@ const skillCategories = [
   {
     title: 'Languages',
     icon: <FiCode style={{ color: 'var(--primary)' }} />,
-    skills: ['Python', 'C++', 'Java', 'PHP']
+    skills: ['Python', 'JavaScript', 'TypeScript', 'C++', 'Java', 'PHP', 'SQL']
   },
   {
     title: 'Frameworks & Libraries',
     icon: <FiLayers style={{ color: 'var(--primary)' }} />,
-    skills: ['React.js', 'Node.js', 'Flutter', 'ASP.NET', 'Laravel', 'Numpy', 'Pandas', 'Apache Spark', 'Apache Kafka']
+    skills: ['React Native', 'Next.js', 'React.js', 'Node.js', 'Flutter', 'Apache Kafka', 'Apache Spark', 'Pandas', 'Numpy']
   },
   {
     title: 'Databases',
     icon: <FiDatabase style={{ color: 'var(--primary)' }} />,
-    skills: ['MySQL', 'MongoDB', 'Firebase', 'PostgreSQL']
+    skills: ['TimescaleDB', 'PostgreSQL', 'MySQL', 'MongoDB', 'Firebase']
   },
   {
     title: 'Tools & Platforms',
     icon: <FiTool style={{ color: 'var(--primary)' }} />,
-    skills: ['Docker', 'Git/GitHub', 'CI/CD Pipelines', 'Postman', 'VS Code', 'Debezium', 'Looker Studio']
+    skills: ['Power BI', 'ESP32 IoT', 'Docker', 'Debezium', 'Git/GitHub', 'CI/CD Pipelines', 'Postman']
   },
   {
     title: 'Technical Competencies',
     icon: <FiSliders style={{ color: 'var(--primary)' }} />,
-    skills: ['JWT Authentication', 'Payment Gateway Integration', 'Machine Learning', 'Data Analytics', 'Data Pipelines']
+    skills: ['Event-Driven Architecture', 'Computer Vision (YOLO)', 'Data Engineering', 'IoT Telemetry', 'Machine Learning', 'Data Analytics']
   }
 ];
 
